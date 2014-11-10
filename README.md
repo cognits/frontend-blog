@@ -62,7 +62,8 @@ gulp
 ## 4. Entrega
 
 Para entregar el proyecto, debemos hacer commit de los cambios y luego empujarlos
-a tu repositorio remoto en Github.
+a tu repositorio remoto en Github, toma encuenta que no es necesario comentar cada
+post.
 
 ### Commit y Push
 
