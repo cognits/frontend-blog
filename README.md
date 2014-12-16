@@ -31,7 +31,7 @@ para ver cómo te debe quedar tu página.
 
 ## 3. Escribir código
 
-Asegura escribir todo tu código de HTML en [index.html](index.html) y todo tu CSS en [styles.css](css/styles.css). Lo que buscas es reproducir en código la imagen [portfolio-sketch](portfolio-sketch.png) lo más similar posible.
+Asegura escribir todo tu código de HTML en [index.html](index.html) y todo tu CSS en [styles.css](css/styles.css). Lo que buscas es reproducir en código la imagen [blog-sketch](blog-sketch.png) lo más similar posible.
 
 ### Escribe 3 posts
 Ahora debes escribir al menos 3 posts. Cada post individual debe quedar adentro del archivo
