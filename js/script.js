@@ -1,4 +1,3 @@
-titles = [];
 
 // Javascript Code.
 $(document).ready(function () {
@@ -9,13 +8,11 @@ $(document).ready(function () {
   //
   // });
 
-  $.getJSON('_posts/posts.json', {format: "json"}, function(data) {
-
-  
   $(this).load("_posts/posts.json", function(data){
     var posts = JSON.parse(data);
-    titles.push(['posts'][0]['title']);
-    $(".posts1").append(titles);
+    $(".posts1Title").html(posts['posts'][0]['title']);
+    $(".posts1Date").html(posts['posts'][0]['date']);
+    $(".posts1Content").html(posts['posts'][0]['content']);
     //
-  });});
+  });
 });
