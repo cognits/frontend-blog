@@ -10,6 +10,7 @@ $(document).ready(function () {
 
   $(this).load("_posts/posts.json", function(data){
     var posts = JSON.parse(data);
+    
     $(".posts1Title").html(posts['posts'][0]['title']);
     $(".posts1Date").html(posts['posts'][0]['date']);
     $(".posts1Content").html(posts['posts'][0]['content']);
