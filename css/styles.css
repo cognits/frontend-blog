@@ -53,7 +53,13 @@ div{
 }
 
 /******* Div del Post 1 y 2 ******/
-.posts{
+.posts1{
+	font-color: #0080FF;
+}
+.posts2{
+	font-color: #0080FF;
+}
+.posts3{
 	font-color: #0080FF;
 }
 
