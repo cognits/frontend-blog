@@ -1,0 +1,52 @@
+p{
+	margin-top: 12px;
+}
+
+/******** Barra de Inicio ********/
+
+/*Cognits Blog*/
+.inicio{
+	margin-left: 15px;
+	color: #585858;
+}
+
+/*Home*/
+.inicio1{
+	margin-top: -30px;
+	margin-left: 1160px;
+	color: #585858;
+}
+
+/*Search*/
+.inicio2{
+	margin-top: -30px;
+	margin-left: 1240px;
+	color: #585858;
+}
+
+
+/********** Titulo del Blog ********/
+/*Div del Cognits Blog*/
+div{
+	margin-top: -19px;
+}
+.parte2{ /*Div del Cognits Blog*/
+	width: 1301px;
+	height: 140px;
+	background-color: #F9F5F5;
+	font-size: 16px;
+}
+/* Espacio en blanco*/
+.nota0{
+	font-size: 15px;
+	color: #F9F5F5 ;
+}
+/*Cognits Blog*/
+.nota1{
+	margin-left: 300px;
+	font-size: 38px;
+}
+/*Texto*/
+.nota2{
+	margin-left: 300px;
+}
