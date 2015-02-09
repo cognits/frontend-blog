@@ -2,6 +2,10 @@ p{
 	margin-top: 12px;
 }
 
+hr{
+	;
+}
+
 /******** Barra de Inicio ********/
 
 /*Cognits Blog*/
@@ -13,14 +17,14 @@ p{
 /*Home*/
 .inicio1{
 	margin-top: -30px;
-	margin-left: 1160px;
+	margin-left: 1140px;
 	color: #585858;
 }
 
 /*Search*/
 .inicio2{
 	margin-top: -30px;
-	margin-left: 1240px;
+	margin-left: 1220px;
 	color: #585858;
 }
 
@@ -55,13 +59,49 @@ div{
 /******* Div del Post 1 y 2 ******/
 .posts1{
 	font-color: #0080FF;
+	margin-top: -90px;
+	margin-left: 300px;
 }
 .posts2{
 	font-color: #0080FF;
+	margin-left: 300px;
+
 }
 .posts3{
 	font-color: #0080FF;
+	margin-left: 300px;
 }
+
+/****** Post 1 ******/
+.postsTitle1{
+	font-size: 30px;
+	color: #2E9AFE;
+}
+.postsContent1{
+	font-size: 20px;
+	color: #2E9AFE;
+}
+/*****************/
+/****** Post 2 ******/
+.postsTitle2{
+	font-size: 30px;
+	color: #2E9AFE;
+}
+.postsContent2{
+	font-size: 20px;
+	color: #2E9AFE;
+}
+/*****************/
+/****** Post 3 ******/
+.postsTitle3{
+	font-size: 30px;
+	color: #2E9AFE;
+}
+.postsContent3{
+	font-size: 20px;
+	color: #2E9AFE;
+}
+/*****************/
 
 div  h1{
 	color: #0080FF;
@@ -91,11 +131,11 @@ div  h1{
 }
 .but{
 	margin-top: -10px;
-	margin-left: 15px;*/
+	margin-left: 15px;
 }
 
 /********** Creditos ********/
-.hrcred{
+.separators{
 	margin-top: 20px;
 }
 .creditos{
