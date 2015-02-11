@@ -24,23 +24,24 @@ $(document).ready(function() {
                             "<br> </br>"+
                             "<p class=\"postContent\">"+ pcontent[i] + "</p>"+
                             "<p class=\"postDate\"> Posted by <p class=\"blue\">Cognits Student </p> <p class=\"date\">, " + pdate[i] + "</p></p>"+
+                          "<form> "+
+                            "Coment: <input type=\"text\" name=\"coment\"value=\"Write here your coment!\">"+
+                          "</form>" +
+                          "<button id=\"boton\">Add!</button><br/>"+
+                          "<div class=\"coments\">"+
+                          "<br></br>"+
+                          "</div>"+
                           "</div>"+
                           "<hr class =\"divs\">");
     }
     //
+    $('#boton').click(function() {
+        alert("Has dado un click");
+        var Add = $("input[name=coment]").val();
+          $('.coments').append("<p>"+Add+"</p>");
   });
-
-  /*for (var i = 0; i < 3; i++){
-      console.log(ptitle[i]);
-      console.log(pcontent[i]);
-      console.log(pdate[i]);
-      $(".menu").append("<h3 class =\"postTitle\">" + ptitle[i] + "</h3>"+
-                          "<br> </br>"+
-                          "<div class =\"post\">"+
-                            "<p></p>"+
-                            "<p class=\"postContent\">"+ pcontent[i] + "</p>"+
-                            "<p class=\"postDate\">" + pdate[i] + "</p>"+
-                          "</div>"+
-                          "<hr class =\"divs\">");
-    }*/
+  });
+  
+  //alert("Has dado un click");
+  
 });
