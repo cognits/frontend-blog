@@ -1,5 +1,7 @@
-
 // Javascript Code.
+ptitle = [];
+pcontent = [];
+pdate = [];
 $(document).ready(function() {
   // $.get("_posts/2014-11-09.json", function(data){
   //
@@ -9,19 +11,36 @@ $(document).ready(function() {
   // });
   $(this).load("_posts/posts.json", function(data){
     var posts = JSON.parse(data);
-    
-    $(".postsTitle1").html(posts['posts'][0]['title']);
-    $(".postsContent1").html(posts['posts'][0]['content']);
-    $(".postsDate1").html(posts['posts'][0]['date']);
 
-    $(".postsTitle2").html(posts['posts'][1]['title']);
-    $(".postsContent2").html(posts['posts'][1]['content']);
-    $(".postsDate2").html(posts['posts'][1]['date']);
+    for (var i = 0; i < 3; i++){
+      ptitle.push(posts['posts'][i]['title']);
+      pcontent.push(posts['posts'][i]['content']);
+      pdate.push(posts['posts'][i]['date']);
 
-    $(".postsTitle3").html(posts['posts'][2]['title']);
-    $(".postsContent3").html(posts['posts'][2]['content']);
-    $(".postsDate3").html(posts['posts'][2]['date']);
+      $(".menu").append("<h3 class =\"postTitle\">" + ptitle[i] + "</h3>"+
+                          "<br> </br>"+
+                          "<div class =\"post\">"+
+                            "<p></p>"+
+                            "<br> </br>"+
+                            "<p class=\"postContent\">"+ pcontent[i] + "</p>"+
+                            "<p class=\"postDate\"> Posted by <p class=\"blue\">Cognits Student </p> <p class=\"date\">, " + pdate[i] + "</p></p>"+
+                          "</div>"+
+                          "<hr class =\"divs\">");
+    }
     //
   });
-  $("#menu").accordion();
+
+  /*for (var i = 0; i < 3; i++){
+      console.log(ptitle[i]);
+      console.log(pcontent[i]);
+      console.log(pdate[i]);
+      $(".menu").append("<h3 class =\"postTitle\">" + ptitle[i] + "</h3>"+
+                          "<br> </br>"+
+                          "<div class =\"post\">"+
+                            "<p></p>"+
+                            "<p class=\"postContent\">"+ pcontent[i] + "</p>"+
+                            "<p class=\"postDate\">" + pdate[i] + "</p>"+
+                          "</div>"+
+                          "<hr class =\"divs\">");
+    }*/
 });

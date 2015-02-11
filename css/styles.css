@@ -55,54 +55,36 @@ div{
 	font-size: 18px;
 	margin-left: 300px;
 }
-
-/******* Div del Post 1 y 2 ******/
-.posts1{
+/****** Menu ******/
+.menu{
+	width: 1020px;
+}
+/******* Divs de cada Posts*******/
+.post{
 	font-color: #0080FF;
 	margin-top: -90px;
 	margin-left: 300px;
 }
-.posts2{
-	font-color: #0080FF;
-	margin-left: 300px;
 
-}
-.posts3{
-	font-color: #0080FF;
-	margin-left: 300px;
-}
-
-/****** Post 1 ******/
-.postsTitle1{
+/****** Posts ******/
+.postTitle{
 	font-size: 30px;
 	color: #2E9AFE;
 	margin-left: 300px;
 }
-.postsContent1{
+.postContent{
+	text-align: justify;
 	font-size: 20px;
 	color: #2E9AFE;
 }
-/*****************/
-/****** Post 2 ******/
-.postsTitle2{
-	font-size: 30px;
-	color: #2E9AFE;
-	margin-left: 300px;
-}
-.postsContent2{
-	font-size: 20px;
+.blue{
+	margin-left: 70px;
+	margin-top: -30px;
 	color: #2E9AFE;
 }
-/*****************/
-/****** Post 3 ******/
-.postsTitle3{
-	font-size: 30px;
-	color: #2E9AFE;
-	margin-left: 300px;
-}
-.postsContent3{
-	font-size: 20px;
-	color: #2E9AFE;
+.date{
+	margin-left: 171px;
+	margin-top: -30px;
 }
 /*****************/
 
@@ -118,6 +100,7 @@ div  h1{
 
 /*Linea divisoria post 1 - post2 */
 .divs{
+	margin-left: 300px; 
 	width: 700px;
 	height: 1px;
 }
