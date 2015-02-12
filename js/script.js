@@ -3,6 +3,30 @@ ptitle = [];
 pcontent = [];
 pdate = [];
 $(document).ready(function() {
+
+  function dia_de_la_semana(dia){
+    if (dia == 1 ){
+          return "Monday";
+        }
+        else if (dia == 2){
+          return "Tuesday";
+        }
+        else if (dia == 3){
+          return "Wednesday";
+        }
+        else if (dia == 4){
+          return "Thursday";
+        }
+        else if (dia == 5){
+          return "Friday";
+        }
+        else if (dia == 6){
+          return "Saturday";
+        }
+        else if (dia == 7){
+          return "Sunday";
+        }
+  }
   // $.get("_posts/2014-11-09.json", function(data){
   //
   //   var posts = JSON.parse(data);
@@ -40,23 +64,33 @@ $(document).ready(function() {
     $('#boton1').click(function() {
         alert("Comment Added !!!");
         var Add = $("input[name=coment]").val();
-        $('.coments1').append("<p>"+Add+"</p>");
         var d = new Date();
-        //$()('Fecha: '+d.getDate(),'<br>Dia de la semana: '+d.getDay(),'<br>Mes (0 al 11): '+d.getMonth(),'<br>Año: '+d.getFullYear(),'<br>Hora: '+d.getHours(),'<br>Hora UTC: '+d.getUTCHours(),'<br>Minutos: '+d.getMinutes(),'<br>Segundos: '+d.getSeconds());
+        var mes = d.getMonth();
+        $('.coments1').append("<p>"+Add+"</p>");
+        $('.coments1').append('<p> '+ dia_de_la_semana(d.getDay()) +' / '+ d.getDate()+' / '+(mes + 1) + ' / '+d.getFullYear() +' | '+d.getHours() +' : '+d.getMinutes() +' : '+d.getSeconds() +'</p>');
+        $('.coments1').append('<p> ************ </p>');
   });
 
   //Comentario Post 2
   $('#boton2').click(function() {
         alert("Comment Added !!!");
         var Add = $("input[name=coment]").val();
-          $('.coments2').append("<p>"+Add+"</p>");
+        var d = new Date();
+        var mes = d.getMonth();
+        $('.coments2').append("<p>"+Add+"</p>");
+        $('.coments2').append('<p> '+ dia_de_la_semana(d.getDay()) +' / '+ d.getDate()+' / '+(mes + 1) + ' / '+d.getFullYear() +' | '+d.getHours() +' : '+d.getMinutes() +' : '+d.getSeconds() +'</p>');
+        $('.coments2').append('<p> ************ </p>');
   });
 
   //Comentario Post 3
   $('#boton3').click(function() {
         alert("Comment Added !!!");
         var Add = $("input[name=coment]").val();
-          $('.coments3').append("<p>"+Add+"</p>");
+        var d = new Date();
+        var mes = d.getMonth();
+        $('.coments3').append("<p>"+Add+"</p>");
+        $('.coments3').append('<p> '+ dia_de_la_semana(d.getDay()) +' / '+ d.getDate()+' / '+(mes + 1) + ' / '+d.getFullYear() +' | '+d.getHours() +' : '+d.getMinutes() +' : '+d.getSeconds() +'</p>');
+        $('.coments3').append('<p> ************ </p>');
   });
   });
   
