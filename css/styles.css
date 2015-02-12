@@ -60,19 +60,50 @@ div{
 	width: 1020px;
 }
 /******* Divs de cada Posts*******/
-.post{
+.post1{
+	font-color: #0080FF;
+	margin-top: -90px;
+	margin-left: 300px;
+}
+.post2{
+	font-color: #0080FF;
+	margin-top: -90px;
+	margin-left: 300px;
+}
+.post3{
 	font-color: #0080FF;
 	margin-top: -90px;
 	margin-left: 300px;
 }
 
-/****** Posts ******/
-.postTitle{
+/****** Posts  Titulo */
+.postTitle1{
 	font-size: 30px;
 	color: #2E9AFE;
 	margin-left: 300px;
 }
-.postContent{
+.postTitle2{
+	font-size: 30px;
+	color: #2E9AFE;
+	margin-left: 300px;
+}
+.postTitle3{
+	font-size: 30px;
+	color: #2E9AFE;
+	margin-left: 300px;
+}
+/******** y Contenido *****/
+.postContent1{
+	text-align: justify;
+	font-size: 20px;
+	color: #2E9AFE;
+}
+.postContent2{
+	text-align: justify;
+	font-size: 20px;
+	color: #2E9AFE;
+}
+.postContent3{
 	text-align: justify;
 	font-size: 20px;
 	color: #2E9AFE;
