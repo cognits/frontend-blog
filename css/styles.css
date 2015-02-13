@@ -1,16 +1,13 @@
 body{
-	background: url("/home/cognitstarde/Escritorio/frontend-blog/images/fondo.jpg");
+	/*background: url("/home/cognitstarde/Escritorio/frontend-blog/images/fondo.jpg");*/
 	cursor: url("http://u.jimdo.com/www21/o/s4e9df44a0ad8ccd8/img/i0ebb25453c3942ad/1391502327/thumb/image.png"),default;
 }
+
+/***** All paragraphs ******/
 p{
 	margin-top: 12px;
 }
-
-hr{
-	;
-}
-
-/******** Barra de Inicio ********/
+/******** Start Bar ********/
 
 /*Cognits Blog*/
 .cblog{
@@ -33,19 +30,19 @@ hr{
 }
 
 
-/********** Titulo del Blog ********/
+/********** Title of the Blog ********/
 /*Div del Cognits Blog*/
 div{
 	margin-top: -19px;
 }
-.parte2{ /*Div del Cognits Blog*/
+.parte2{ /*Div of the Cognits Blog*/
 	width: 1301px;
 	height: 130px;
 	background-color: #F9F5F5;
 	font-size: 16px;
 }
-/* Espacio en blanco*/
-.nota0{
+/* Blank*/
+.blank{
 	font-size: 10px;
 	color: #F9F5F5 ;
 }
@@ -54,115 +51,72 @@ div{
 	margin-left: 300px;
 	font-size: 38px;
 }
-/*Texto*/
+/*Text*/
 .nota2{
 	font-size: 18px;
 	margin-left: 300px;
 }
 /****** Menu ******/
 .menu{
+	margin-top: 50px;
 	width: 1020px;
 }
-/******* Divs de cada Posts*******/
+/******* Posts Divs *******/
 .post1{
-	font-color: #0080FF;
+	/*color: #0080FF;*/
 	margin-top: -90px;
 	margin-left: 300px;
 }
 .post2{
-	font-color: #0080FF;
+	/*color: #0080FF;*/
 	margin-top: -90px;
 	margin-left: 300px;
 }
 .post3{
-	font-color: #0080FF;
+	/*color: #0080FF;*/
 	margin-top: -90px;
 	margin-left: 300px;
 }
 
-/****** Posts  Titulo */
-.postTitle1{
+/****** Posts  Titles */
+.generalTitle{
 	font-size: 30px;
 	color: #2E9AFE;
 	margin-left: 300px;
 }
-.postTitle2{
-	font-size: 30px;
-	color: #2E9AFE;
-	margin-left: 300px;
-}
-.postTitle3{
-	font-size: 30px;
-	color: #2E9AFE;
-	margin-left: 300px;
-}
-/******** y Contenido *****/
-.postContent1{
+/******** Posts Contents *****/
+.generalContent{
 	text-align: justify;
 	font-size: 20px;
 	color: #2E9AFE;
 }
-.postContent2{
-	text-align: justify;
-	font-size: 20px;
-	color: #2E9AFE;
+/********* Post by , Date and cognits student *******/
+.date{
+	color: black;
 }
-.postContent3{
-	text-align: justify;
-	font-size: 20px;
-	color: #2E9AFE;
-}
-
-/********* Post by , cognits student and fecha *******/
-.postDate1{
-	color: white;
-}
-.postDate2{
-	color: white;
-}
-.postDate2{
-	color: white;
+.generalDate{
+	color: black;
+	margin-left: 186px;
+	margin-top: -30px;
 }
 .blue{
 	margin-left: 75px;
 	margin-top: -30px;
 	color: #2E9AFE;
 }
-.date{
-	color: white;
-	margin-left: 186px;
-	margin-top: -30px;
-}
 
-form {
-    font-size: 12px;
-    font-family: Verdana, Arial, Sans-Serif;
-    display: inline-block;
-}
-/*****************/
-
-div  h1{
-	color: #0080FF;
-	margin-left: 300px;
-}
-/*Noticias de los 2 post*/
-.noticia{
-	color: #0080FF;
-	margin-left: 300px;
-}
-
-/*Linea divisoria post 1 - post2 */
+/*Dividing line of the posts */
 .divs{
 	margin-left: 300px; 
 	width: 700px;
 	height: 1px;
 }
 
-/*Boton1*/
+/*Button1 Older Post --> */
 .boton1{
 	margin-top: 10px;
 	margin-left: 880px;
-	border: 2px solid #F2F2F2;
+	/*border: 2px solid #F2F2F2;*/
 	height: 30px;
 	width: 120px;
 	border-radius: 20px;
@@ -173,23 +127,29 @@ div  h1{
 	margin-left: 15px;
 }
 
-/******* Comentarios y Fechas *******/
+/****** Comentary TextBox *********/
+form {
+    font-size: 12px;
+    font-family: Verdana, Arial, Sans-Serif;
+    display: inline-block;
+}
+/******* Comentaries, Dates, Separators *******/
 .com{
-	color: white;
+	font-size: 15px;
 }
 .day{
-	color: #2E9AFE;
+	color: #0080FF;
+	font-family: Arial;
+	font-size: 15px;
 }
 .coment_separator{
-	color: white;
+	color: black;
 }
 
-
-/********** Creditos ********/
+/********** Credits ********/
 .separators{
 	margin-top: 20px;
 }
 .creditos{
-	color: white;
 	margin-left: 300px;
 }
