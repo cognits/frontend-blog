@@ -1,3 +1,7 @@
+body{
+	background: url("/home/cognitstarde/Escritorio/frontend-blog/images/fondo.jpg");
+	cursor: url("http://u.jimdo.com/www21/o/s4e9df44a0ad8ccd8/img/i0ebb25453c3942ad/1391502327/thumb/image.png"),default;
+}
 p{
 	margin-top: 12px;
 }
@@ -9,20 +13,20 @@ hr{
 /******** Barra de Inicio ********/
 
 /*Cognits Blog*/
-.inicio{
+.cblog{
 	margin-left: 15px;
 	color: #585858;
 }
 
 /*Home*/
-.inicio1{
+.home{
 	margin-top: -30px;
 	margin-left: 1140px;
 	color: #585858;
 }
 
 /*Search*/
-.inicio2{
+.search{
 	margin-top: -30px;
 	margin-left: 1220px;
 	color: #585858;
@@ -108,13 +112,25 @@ div{
 	font-size: 20px;
 	color: #2E9AFE;
 }
+
+/********* Post by , cognits student and fecha *******/
+.postDate1{
+	color: white;
+}
+.postDate2{
+	color: white;
+}
+.postDate2{
+	color: white;
+}
 .blue{
-	margin-left: 70px;
+	margin-left: 75px;
 	margin-top: -30px;
 	color: #2E9AFE;
 }
 .date{
-	margin-left: 171px;
+	color: white;
+	margin-left: 186px;
 	margin-top: -30px;
 }
 
@@ -157,10 +173,23 @@ div  h1{
 	margin-left: 15px;
 }
 
+/******* Comentarios y Fechas *******/
+.com{
+	color: white;
+}
+.day{
+	color: #2E9AFE;
+}
+.coment_separator{
+	color: white;
+}
+
+
 /********** Creditos ********/
 .separators{
 	margin-top: 20px;
 }
 .creditos{
+	color: white;
 	margin-left: 300px;
 }

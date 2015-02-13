@@ -60,15 +60,16 @@ $(document).ready(function() {
                           "</div>"+
                           "<hr class =\"divs\">");
     }
+    //
     //Comentario Post 1
     $('#boton1').click(function() {
         alert("Comment Added !!!");
         var Add = $("input[name=coment]").val();
         var d = new Date();
         var mes = d.getMonth();
-        $('.coments1').append("<p>"+Add+"</p>");
-        $('.coments1').append('<p> '+ dia_de_la_semana(d.getDay()) +' / '+ d.getDate()+' / '+(mes + 1) + ' / '+d.getFullYear() +' | '+d.getHours() +' : '+d.getMinutes() +' : '+d.getSeconds() +'</p>');
-        $('.coments1').append('<p> ************ </p>');
+        $('.coments1').append("<p class =\"com\">"+Add+"</p>");
+        $('.coments1').append('<p class =\"day\"> '+ dia_de_la_semana(d.getDay()) +' / '+ d.getDate()+' / '+(mes + 1) + ' / '+d.getFullYear() +' | '+d.getHours() +' : '+d.getMinutes() +' : '+d.getSeconds() +'</p>');
+        $('.coments1').append('<p class =\"coment_separator\"> ****************************************** </p>');
   });
 
   //Comentario Post 2
@@ -77,9 +78,9 @@ $(document).ready(function() {
         var Add = $("input[name=coment]").val();
         var d = new Date();
         var mes = d.getMonth();
-        $('.coments2').append("<p>"+Add+"</p>");
-        $('.coments2').append('<p> '+ dia_de_la_semana(d.getDay()) +' / '+ d.getDate()+' / '+(mes + 1) + ' / '+d.getFullYear() +' | '+d.getHours() +' : '+d.getMinutes() +' : '+d.getSeconds() +'</p>');
-        $('.coments2').append('<p> ************ </p>');
+        $('.coments2').append("<p class =\"com\">"+Add+"</p>");
+        $('.coments2').append('<p class =\"day\"> '+ dia_de_la_semana(d.getDay()) +' / '+ d.getDate()+' / '+(mes + 1) + ' / '+d.getFullYear() +' | '+d.getHours() +' : '+d.getMinutes() +' : '+d.getSeconds() +'</p>');
+        $('.coments2').append('<p class =\"coment_separator\"> ****************************************** </p>');
   });
 
   //Comentario Post 3
@@ -88,12 +89,40 @@ $(document).ready(function() {
         var Add = $("input[name=coment]").val();
         var d = new Date();
         var mes = d.getMonth();
-        $('.coments3').append("<p>"+Add+"</p>");
-        $('.coments3').append('<p> '+ dia_de_la_semana(d.getDay()) +' / '+ d.getDate()+' / '+(mes + 1) + ' / '+d.getFullYear() +' | '+d.getHours() +' : '+d.getMinutes() +' : '+d.getSeconds() +'</p>');
-        $('.coments3').append('<p> ************ </p>');
+        $('.coments3').append("<p class =\"com\">"+Add+"</p>");
+        $('.coments3').append('<p class =\"day\"> '+ dia_de_la_semana(d.getDay()) +' / '+ d.getDate()+' / '+(mes + 1) + ' / '+d.getFullYear() +' | '+d.getHours() +' : '+d.getMinutes() +' : '+d.getSeconds() +'</p>');
+        $('.coments3').append('<p class =\"coment_separator\"> ****************************************** </p>');
   });
-  });
-  
+  $(document).ready(function() {
+    $('.post1').hide();
+    $('.post2').hide();
+    $('.post3').hide();
   //alert("Has dado un click");
-  
-});
+  });
+  $('.postTitle1').click(function() {
+    $('.post1').toggle('blind');
+    $('.post2').hide('slide');
+    $('.post3').hide('slide');
+  });
+
+  $('.postTitle2').click(function() {
+    $('.post2').toggle('blind');
+    $('.post1').hide('slide');
+    $('.post3').hide('slide');
+  });
+
+  $('.postTitle3').click(function() {
+    $('.post3').toggle('blind');
+    $('.post2').hide('slide');
+    $('.post1').hide('slide');
+  });
+
+  $('.home').click(function() {
+    $('.post3').hide('slide');
+    $('.post2').hide('slide');
+    $('.post1').hide('slide');
+  });
+
+
+  });
+ });
