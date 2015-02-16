@@ -29,6 +29,11 @@ p{
 	color: #585858;
 }
 
+/*Resaltar Texto a buscar*/
+.resaltar{
+	background-color:#FF0;
+}
+
 
 /********** Title of the Blog ********/
 /*Div del Cognits Blog*/

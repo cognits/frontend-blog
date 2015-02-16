@@ -46,7 +46,7 @@ $(document).ready(function() {
       pcontent.push(posts['posts'][i]['content']);
       pdate.push(posts['posts'][i]['date']);
 
-      $(".menu").append("<h3 id =\"postTitle"+no+"\" class=\"generalTitle\">" + ptitle[i] +"</h3>"+
+      $(".menu").append("<p id =\"postTitle"+no+"\" class=\"generalTitle\">" + ptitle[i] +"</p>"+
                           "<br> </br>"+
                           "<div class =\"post"+no+"\">"+
                             "<p></p>"+
@@ -132,5 +132,20 @@ $(document).ready(function() {
     $('.post2').hide('slide');
     $('.post1').hide('slide');
   });
+
+  //Buscador:
+  $.expr[':'].icontains = function(obj, index, meta, stack){
+    return (obj.textContent || obj.innerText || jQuery(obj).text() || '').toLowerCase().indexOf(meta[3].toLowerCase()) >= 0;
+    };
+    $(document).ready(function(){   
+        $('#buscador').keyup(function(){
+                     buscar = $(this).val();
+                     $('.lista h3').removeClass('resaltar');
+                            if(jQuery.trim(buscar) != ''){
+                               $(".lista h3:icontains('" + buscar + "')").addClass('resaltar');
+                            }
+        });
+    });   
+
   });
  });
