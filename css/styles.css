@@ -29,6 +29,10 @@ p{
 	color: #585858;
 }
 
+/*Searching Text */
+.searching{
+	margin-left: 1020px;
+}
 /*Resaltar Texto a buscar*/
 .resaltar{
 	background-color:#FF0;
@@ -42,7 +46,7 @@ div{
 }
 .parte2{ /*Div of the Cognits Blog*/
 	width: 1301px;
-	height: 130px;
+	height: 175px;
 	background-color: #F9F5F5;
 	font-size: 16px;
 }

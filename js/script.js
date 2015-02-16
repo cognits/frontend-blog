@@ -102,6 +102,7 @@ $(document).ready(function() {
     $('.post1').hide();
     $('.post2').hide();
     $('.post3').hide();
+    $('.searching').hide();
   //alert("Has dado un click");
   });
 
@@ -131,7 +132,16 @@ $(document).ready(function() {
     $('.post3').hide('slide');
     $('.post2').hide('slide');
     $('.post1').hide('slide');
+    $('.searching').hide('slide');
+    $('#buscador').val(" ");
+    $('.lista p').removeClass('resaltar');
   });
+
+  $('.search').click(function() {
+    $('.searching').toggle('blind');
+    $('#buscador').val(" ");
+    $('.lista p').removeClass('resaltar');
+  });  
 
   //Buscador:
   $.expr[':'].icontains = function(obj, index, meta, stack){
@@ -140,9 +150,10 @@ $(document).ready(function() {
     $(document).ready(function(){   
         $('#buscador').keyup(function(){
                      buscar = $(this).val();
-                     $('.lista h3').removeClass('resaltar');
+                     $('.lista p').removeClass('resaltar');
+
                             if(jQuery.trim(buscar) != ''){
-                               $(".lista h3:icontains('" + buscar + "')").addClass('resaltar');
+                               $(".lista p:icontains('" + buscar + "')").addClass('resaltar');
                             }
         });
     });   
