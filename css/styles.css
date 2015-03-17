@@ -1,0 +1,17 @@
+* {
+    border: 1px solid;
+}
+
+.up {
+    display: flex;
+    align-items: center;
+}
+
+.text_right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home {
+    margin-right: 2%;
+}
