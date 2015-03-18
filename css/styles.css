@@ -2,6 +2,14 @@
     border: 1px solid;
 }
 
+a {
+    color: #656565;
+}
+
+a:link {
+    text-decoration: none;
+}
+
 .up {
     display: flex;
     align-items: center;
@@ -12,6 +20,22 @@
     justify-content: flex-end;
 }
 
-.home {
+.proyect_purpose {
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_link {
     margin-right: 2%;
+}
+
+
+.proyect_description {
+    font-size: 155%;
+}
+
+.upper_text {
+    color: #656565;
 }
