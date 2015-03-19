@@ -1,0 +1,33 @@
+.header{
+    font-size: 20px;
+    color: #808080;
+    margin: 0.5%;
+    display: inline-block;
+}
+
+.header2{
+    font-size: 15px;
+    color: #808080;
+    margin: 0.5%;
+    float: right;
+}
+
+.home{
+    font-size: 15px;
+    color: #808080;
+    margin: 0.5%;
+    float: right;
+}
+
+.title{
+    background-color: #f6f6f6;
+    border-top: 1px solid #BDBDBD;
+}
+
+.cognits{
+    font-size: 35px;
+}
+.textCognits{
+    font-size: 20px;
+
+}
