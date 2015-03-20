@@ -25,9 +25,65 @@
 }
 
 .cognits{
-    font-size: 35px;
+    font-size: 40px;
+margin-left: 15%;
 }
 .textCognits{
-    font-size: 20px;
+    font-size: 25px;
+    margin-left: 15%;
+}
 
+.first{
+    margin-left: 15%;
+}
+
+.posts1{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form {
+    display: inline-block;
+}
+
+#button{
+    display: inline-block;
+    height:10%;
+    width: 10%;
+    background-color:#ffffff;
+    font-family:arial;
+    color:#808080;
+    border-radius: 3%;
+    text-align:center;
+    margin-top:2px;
+}
+
+.list {
+    font-family:Arial;
+    color:#9a9a9a;
+}
+
+
+.pull-me {
+    text-align:center;
+    font-size: 15px;
+    color: #808080;
+    margin: 0.5%;
+    float: right;
 }
