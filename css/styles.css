@@ -1,14 +1,12 @@
-body{
-    margin:0 auto;
-}
+/*the title of blog */
 .header{
     font-size: 20px;
     color: #808080;
     margin: 0.5%;
     display: inline-block;
 }
-
-.header2{
+/*for the button home*/
+.texthome{
     font-size: 15px;
     color: #808080;
     margin: 0.5%;
@@ -23,7 +21,7 @@ body{
     display: inline-block;
 }
 
-.title{
+.titlegeneral{
     background-color: #f6f6f6;
     border-top: 1px solid #BDBDBD;
 }
@@ -39,16 +37,7 @@ body{
     margin-right: 15%;
 }
 
-.first{
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-.posts1{
-    font-size: 20px;
-    color:#9a9a9a;
-}
-
+/*This is the search box on the page*/
 #button{
     display: inline-block;
     height:20px;
@@ -104,4 +93,38 @@ body{
     color: #F3AA04;
     background-color: #FFFF96;
     border-radius: 3%;
+}
+
+/*The first post*/
+.first{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.title{
+    font-size: 35px;
+    color:#1d80e2;
+}
+
+.titles{
+    font-size: 35px;
+    color:#1d80e2;
+}
+
+.titless{
+    font-size: 35px;
+    color:#1d80e2;
+}
+
+.title4{
+    font-size: 35px;
+    color:#1d80e2;
+}
+.title5{
+    font-size: 35px;
+    color:#1d80e2;
+}
+.title6{
+    font-size: 35px;
+    color:#1d80e2;
 }
