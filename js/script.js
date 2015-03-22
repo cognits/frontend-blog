@@ -2,17 +2,16 @@
 
 //Esto es para la caja de busqueda
 $(document).ready(function(){
-  $('#button').click(function() {
+    $('#button').click(function() {
         var toAdd = $('input[name=checkListItem]').val();   
         $('.list').append('<div class="item">' + toAdd + '</div>')
-  });
+    });
 });
-
 
 //esto es para que se oculte la caja
 $(document).ready(function(){
     $('.pull-me').click(function(){
-        $(".search").slideToggle('slow');
+        $(".panel").slideToggle('slow');
     });
 });
 
@@ -46,3 +45,17 @@ $(document).ready(function () {
 });
 
 
+//Para resaltar el texto !!!! 
+jQuery.fn.extend({
+    resaltar: function(busqueda, claseCSSbusqueda){
+        var regex = new RegExp("(<[^>]*>)|("+ busqueda.replace(/([-.*+?^${}()|[\]\/\\])/g,"\\$1") +')', 'ig');
+        var nuevoHtml=this.html(this.html().replace(regex, function(a, b, c){
+            return (a.charAt(0) == "<") ? a : "<span class=\""+ claseCSSbusqueda +"\">" + c + "</span>";
+        }));
+        return nuevoHtml;
+    }
+});
+
+function resaltarTexto(){
+    $("#texto").resaltar(cajaTexto.value, "resaltarTexto");
+}

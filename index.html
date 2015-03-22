@@ -11,7 +11,6 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
-
     <title>Cognits Blog</title>
 
     <!-- Bootstrap core CSS -->
@@ -29,32 +28,23 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
 
 </head>
 
-    <body>
-
-
+    <body id="texto">
         <div class="header">Congnits Blog</div>
-        <div class="pull-me">search</div>
-        <div class="search">
-        <form name="checkListForm">
-            <input type="text" name="checkListItem"/>
-        </form>
-        <div id="button" ><img src="images/lupa.png" id="button"></div>
-        <br/>
-        <div class="list"></div>
+        <div class="panel">
+                <input type="text" name="checkListForm" id="cajaTexto"/>
+            <div id="button"  onClick="resaltarTexto();"><img src="images/lupa.png" id="button" ></div>
+            <br/>
+            <div class="lista" id="texto p"></div> 
         </div>
-        </div>
+        <div class="pull-me slide">Search</div>
+        <div  class="home"><a href="javascript:location.reload()"><p class="header2">Home</p></a></div>
 
-
-
-
-        <div  class="home"><a href="javascript:location.reload()">Home</a></div>
-
-        <div class="title">
+        <div class="title" id="texto">
             <p class="cognits">Cognits Blog</p>
             <p class="textCognits">The project is to learn to use HTML, CSS and JavaScript</p>
         </div>
 
-        <div class="first">
+        <div class="first" id="texto">
             <div class="posts1"></div>
             <div class="posts"></div>
             <div class="posts2"></div>
@@ -62,15 +52,11 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
 
             <hr/>
 
-            <div class="face"></div>
+            <p class="face" id="texto"></p>
             </br>
-            <div class="face1"></div>
+            <div class="face1" id="texto"></div>
             </br>
-            <div class="face2"></div>
-
-
-
-
+            <div class="face2" id="texto"></div>
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
