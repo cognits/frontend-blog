@@ -1,13 +1,16 @@
-* {
-    border: 1px solid;
-}
-
-a {
-    color: #656565;
-}
 
 a:link {
     text-decoration: none;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+
+.home_link {
+    margin-right: 2%;
+    color: #656565;
 }
 
 .up {
@@ -20,22 +23,111 @@ a:link {
     justify-content: flex-end;
 }
 
-.proyect_purpose {
-    background-color: #F5F5F5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.upper_text {
+    color: #656565;
 }
-
-.home_link {
-    margin-right: 2%;
-}
-
 
 .proyect_description {
     font-size: 155%;
 }
 
-.upper_text {
+.proyect_purpose {
+    background-color: #F5F5F5;
+    border-top: 1px solid #C7C7C7;
+}
+
+.one_two_posts {
+    margin-top: 5%;
+    text-align: justify;
+}
+
+.three_four_posts {
+    margin-top: 5%;
+    text-align: justify;
+}
+
+.coloured {
+    color: #428BCA;
+}
+
+.first_post {
+    margin-bottom: 2%;
+    border
+}
+
+.info {
+    margin-left: -2.2%;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #E6E6E6;
+    font-weight: bold;
+}
+
+.info2 {
+    margin-left: -2.2%;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #E6E6E6;
+    font-weight: bold;
+}
+
+.info3 {
+    margin-left: -2.2%;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #E6E6E6;
+    font-weight: bold;
+}
+
+.info4 {
+    margin-left: -2.2%;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #E6E6E6;
+    font-weight: bold;
+}
+
+.display_content {
+    border: 0;
+    background-color: white;
+    text-align: left;
+    margin-left: -3%;
+}
+
+.view_more_post {
+    padding: 0 0 0 0;
+    width: 125px;
+    height: 35px;
+    border-radius: 54px;
+    background-color: white;
+    border: 1px solid #D1D1D1;
+    font-weight: bold;
+    color: #428BCA;
+}
+
+.older {
+    float: right;
+}
+
+.newest {
+    float: left;
+}
+
+.button_container {
+    margin-top: 2%;
+}
+
+.active_button {
+    background-color: #4BB5E2;
+    border: 0;
+    color: white;
+}
+
+.button_text {
+    margin: 0 0 0 0;
+}
+
+footer {
+    padding-top: 1%;
+    margin-top: 4%;
+    border-top: 1px solid #E6E6E6;
+    font-weight: bold;
     color: #656565;
 }
+
