@@ -46,24 +46,18 @@ $(document).ready(function () {
   $(this).load("_posts/posts.json", function(data){
     var posts = JSON.parse(data);
     $(".title").html(posts['posts'][0]['title']);
+    $(".show").html(posts['posts'][0]['show']);
     $(".content").html(posts['posts'][0]['content']);
     $(".date").html(posts['posts'][0]['date']);
-
-    //
   });
 });
-//The image of first post
-$(function(){
- $(document).ready(function(){
-  $.getJSON("_posts/posts.json",
-   function(data){
-    $.each(data.posts, function(i,auto){
-     $("<img/>").attr("src", auto.image).appendTo("#imagenes");
+//the slideToggle
+$(document).ready(function(){
+    $('.pull1').click(function(){
+        $(".post1").slideToggle('slow');
     });
-   });
-  return false;
- });
 });
+
 
 //the second post
 $(document).ready(function () {
@@ -75,17 +69,11 @@ $(document).ready(function () {
     //
   });
 });
-//The image of second post
-$(function(){
- $(document).ready(function(){
-  $.getJSON("_posts/posts.json",
-   function(data){
-    $.each(data.posts, function(i,auto){
-     $("<img/>").attr("src", auto.image1).appendTo("#imagene");
+//the slideToggle
+$(document).ready(function(){
+    $('.pull2').click(function(){
+        $(".post2").slideToggle('slow');
     });
-   });
-  return false;
- });
 });
 
 //the third posts
@@ -98,17 +86,11 @@ $(document).ready(function () {
     //
   });
 });
-//The image of third post
-$(function(){
- $(document).ready(function(){
-  $.getJSON("_posts/posts.json",
-   function(data){
-    $.each(data.posts, function(i,auto){
-     $("<img/>").attr("src", auto.image2).appendTo("#imageness");
+//the slideToggle
+$(document).ready(function(){
+    $('.pull3').click(function(){
+        $(".post3").slideToggle('slow');
     });
-   });
-  return false;
- });
 });
 
 //the fourth post
@@ -121,17 +103,10 @@ $(document).ready(function () {
     //
   });
 });
-//The image of fourth post
-$(function(){
- $(document).ready(function(){
-  $.getJSON("_posts/posts.json",
-   function(data){
-    $.each(data.posts, function(i,auto){
-     $("<img/>").attr("src", auto.image3).appendTo("#imagen4");
+$(document).ready(function(){
+    $('.pull4').click(function(){
+        $(".post4").slideToggle('slow');
     });
-   });
-  return false;
- });
 });
 
 //The fifth post
@@ -144,17 +119,10 @@ $(document).ready(function () {
     //
   });
 });
-//The image of fifth post
-$(function(){
- $(document).ready(function(){
-  $.getJSON("_posts/posts.json",
-   function(data){
-    $.each(data.posts, function(i,auto){
-     $("<img/>").attr("src", auto.image4).appendTo("#imagen5");
+$(document).ready(function(){
+    $('.pull5').click(function(){
+        $(".post5").slideToggle('slow');
     });
-   });
-  return false;
- });
 });
 
 //The sixth post
@@ -167,25 +135,26 @@ $(document).ready(function () {
     //
   });
 });
-//The image of sixth post
-$(function(){
- $(document).ready(function(){
-  $.getJSON("_posts/posts.json",
-   function(data){
-    $.each(data.posts, function(i,auto){
-     $("<img/>").attr("src", auto.image5).appendTo("#imagen6");
+$(document).ready(function(){
+    $('.pull6').click(function(){
+        $(".post6").slideToggle('slow');
     });
-   });
-  return false;
- });
 });
+
+
 //en the post
 
+$(document).on('ready',function()
+{
+$("#ocultar").click(function(event){
+event.preventDefault();
+$("#oculto").hide("slow");
+$("#mostrar").show(1000);
+});
 
-$(document).ready(function(){
-    $(".more").toggle(function() {
-        $(this).text("Leer menos...").siblings(".complete").show();
-    }, function() {
-        $(this).text("Leer mas...").siblings(".complete").hide();
-    }); 
+$("#mostrar").click(function(event){
+event.preventDefault();
+$("#oculto").show(1000);
+$("#mostrar").hide("slow");
+});
 });

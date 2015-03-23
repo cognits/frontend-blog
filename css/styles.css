@@ -1,9 +1,17 @@
 /*the title of blog */
+*{
+    border-color: black solid;
+}
 .header{
     font-size: 20px;
     color: #808080;
     margin: 0.5%;
     display: inline-block;
+}
+hr{
+    margin-left: 15%;
+    margin-right: 15%;}
+    display:inline-block;
 }
 /*for the button home*/
 .texthome{
@@ -101,30 +109,160 @@
     margin-right: 15%;
 }
 
+/*The fist post*/
 .title{
     font-size: 35px;
     color:#1d80e2;
 }
 
+.post1 {
+    font-size: 15px;
+    color:#9a9a9a;
+    display:none;
+    font-family:arial,serif;
+}
+
+.pull1 {
+    display:inline-block;
+    margin: 0.5%;
+    font-family:arial,sans-serif;
+    font-size:15px;
+}
+
+
 .titles{
     font-size: 35px;
     color:#1d80e2;
 }
+.post2 {
+    font-size: 15px;
+    color:#9a9a9a;
+    display:none;
+    font-family:arial,serif;
+}
+
+.pull2 {
+    display:inline-block;
+    margin: 0.5%;
+    font-family:arial,sans-serif;
+    font-size:15px;
+}
+
 
 .titless{
     font-size: 35px;
     color:#1d80e2;
 }
+.post3 {
+    font-size: 15px;
+    color:#9a9a9a;
+    display:none;
+    font-family:arial,serif;
+}
+
+.pull3 {
+    display:inline-block;
+    margin: 0.5%;
+    font-family:arial,sans-serif;
+    font-size:15px;
+}
+
 
 .title4{
     font-size: 35px;
     color:#1d80e2;
 }
+.post4 {
+    font-size: 15px;
+    color:#9a9a9a;
+    display:none;
+    font-family:arial,serif;
+}
+
+.pull4 {
+    display:inline-block;
+    margin: 0.5%;
+    font-family:arial,sans-serif;
+    font-size:15px;
+}
+
+
 .title5{
     font-size: 35px;
     color:#1d80e2;
 }
+.post5 {
+    font-size: 15px;
+    color:#9a9a9a;
+    display:none;
+    font-family:arial,serif;
+}
+
+.pull5 {
+    display:inline-block;
+    margin: 0.5%;
+    font-family:arial,sans-serif;
+    font-size:15px;
+}
+
+
+
+
 .title6{
     font-size: 35px;
     color:#1d80e2;
+}
+.post6 {
+    font-size: 15px;
+    color:#9a9a9a;
+    display:none;
+    font-family:arial,serif;
+}
+
+.pull6 {
+    display:inline-block;
+    margin: 0.5%;
+    font-family:arial,sans-serif;
+    font-size:15px;
+}
+
+#mostrar{
+   display:none;
+}
+#ocultar{
+
+}
+
+.bottonPost{
+    width: 130px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 20px;
+    color:#1d80e2;
+    border-radius: 15px;
+    border: 2px solid #f6f6f6;
+    float: right;
+}
+
+.back{
+    width: 90px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 20px;
+    color:#1d80e2;
+    border-radius: 15px;
+    border: 2px solid #f6f6f6;
+    float: right;
+}
+
+.copy{
+    margin-left: 15%;
+    margin-right: 15%;
+    display:inline-block;
+}
+
+/*The images*/
+.imagezise{
+max-width: 200px;
+max-height: 200px;
 }
