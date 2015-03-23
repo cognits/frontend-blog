@@ -15,10 +15,9 @@ hr{
 }
 /*for the button home*/
 .texthome{
-    font-size: 15px;
-    color: #808080;
+
     margin: 0.5%;
-    float: right;
+
 }
 
 .home{
@@ -26,7 +25,9 @@ hr{
     color: #808080;
     margin: 0.5%;
     float: right;
-    display: inline-block;
+    text-decoration:none;
+    cursor:pointer;
+
 }
 
 .titlegeneral{
@@ -46,6 +47,10 @@ hr{
 }
 
 /*This is the search box on the page*/
+input{
+    box-shadow: 0 0 7px #9a9a9a;
+
+}
 #button{
     display: inline-block;
     height:20px;
@@ -64,7 +69,6 @@ hr{
 }
 
 .panel {
-    box-shadow: 0 0 5px #9a9a9a;
     font-size: 15px;
     color:#9a9a9a;
     height:25px;
@@ -88,9 +92,6 @@ hr{
     float: right;
 }
 
-.pull-me p {
-    text-align:center;
-}
 
 .slide{
     display:inline-block;
@@ -113,6 +114,7 @@ hr{
 .title{
     font-size: 35px;
     color:#1d80e2;
+    font-weight: bold;
 }
 
 .post1 {
@@ -133,6 +135,8 @@ hr{
 .titles{
     font-size: 35px;
     color:#1d80e2;
+    font-weight: bold;
+
 }
 .post2 {
     font-size: 15px;
@@ -152,6 +156,8 @@ hr{
 .titless{
     font-size: 35px;
     color:#1d80e2;
+    font-weight: bold;
+
 }
 .post3 {
     font-size: 15px;
@@ -171,6 +177,8 @@ hr{
 .title4{
     font-size: 35px;
     color:#1d80e2;
+    font-weight: bold;
+
 }
 .post4 {
     font-size: 15px;
@@ -190,6 +198,8 @@ hr{
 .title5{
     font-size: 35px;
     color:#1d80e2;
+    font-weight: bold;
+
 }
 .post5 {
     font-size: 15px;
@@ -211,6 +221,8 @@ hr{
 .title6{
     font-size: 35px;
     color:#1d80e2;
+    font-weight: bold;
+
 }
 .post6 {
     font-size: 15px;
@@ -227,12 +239,14 @@ hr{
 }
 
 #mostrar{
-   display:none;
-}
-#ocultar{
 
 }
+#oculto{
+    display: none;
+}
+#muestra{
 
+}
 .bottonPost{
     width: 130px;
     margin-left: 15%;
@@ -265,4 +279,11 @@ hr{
 .imagezise{
 max-width: 200px;
 max-height: 200px;
+}
+
+/*The subtitle*/
+.show{
+    font-size: 25px;
+    color:#1d80e2;
+
 }

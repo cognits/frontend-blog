@@ -64,6 +64,7 @@ $(document).ready(function () {
   $(this).load("_posts/posts.json", function(data){
     var posts = JSON.parse(data);
     $(".titles").html(posts['posts'][1]['title']);
+    $(".shows").html(posts['posts'][1]['show']);
     $(".contents").html(posts['posts'][1]['content']);
     $(".dates").html(posts['posts'][1]['date']);
     //
@@ -81,6 +82,7 @@ $(document).ready(function () {
   $(this).load("_posts/posts.json", function(data){
     var posts = JSON.parse(data);
     $(".titless").html(posts['posts'][2]['title']);
+    $(".showss").html(posts['posts'][2]['show']);
     $(".contentss").html(posts['posts'][2]['content']);
     $(".datess").html(posts['posts'][2]['date']);
     //
@@ -98,6 +100,7 @@ $(document).ready(function () {
   $(this).load("_posts/posts.json", function(data){
     var posts = JSON.parse(data);
     $(".title4").html(posts['posts'][3]['title']);
+    $(".show4").html(posts['posts'][3]['show']);
     $(".content4").html(posts['posts'][3]['content']);
     $(".date4").html(posts['posts'][3]['date']);
     //
@@ -114,6 +117,7 @@ $(document).ready(function () {
   $(this).load("_posts/posts.json", function(data){
     var posts = JSON.parse(data);
     $(".title5").html(posts['posts'][4]['title']);
+    $(".show5").html(posts['posts'][4]['show']);
     $(".content5").html(posts['posts'][4]['content']);
     $(".date5").html(posts['posts'][4]['date']);
     //
@@ -130,6 +134,7 @@ $(document).ready(function () {
   $(this).load("_posts/posts.json", function(data){
     var posts = JSON.parse(data);
     $(".title6").html(posts['posts'][5]['title']);
+    $(".show6").html(posts['posts'][5]['show']);
     $(".content6").html(posts['posts'][5]['content']);
     $(".date6").html(posts['posts'][5]['date']);
     //
@@ -144,17 +149,21 @@ $(document).ready(function(){
 
 //en the post
 
+//the 
 $(document).on('ready',function()
 {
 $("#ocultar").click(function(event){
 event.preventDefault();
+$("#muestra").show("slow");
 $("#oculto").hide("slow");
 $("#mostrar").show(1000);
+
 });
 
 $("#mostrar").click(function(event){
 event.preventDefault();
 $("#oculto").show(1000);
+$("#muestra").hide(1000);
 $("#mostrar").hide("slow");
 });
 });
