@@ -53,8 +53,35 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
                         <h1 class="title coloured"></h1>
                     </button>
                     <p class="posts"></p>
+                    <div class="comments_user"></div>
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_post1" id="commentary_button1">
+                        Comment
+                    </button>
+
+                    <div class="modal fade" id="modal_post1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Post a Comment</h4>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form name="comment_form">
+                                        <input type="text" name="comment_input1" value="" onFocus="javascript:this.value=''"/>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="javascript:input[name=comment_input1].value=''">Close</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="save_comment">Post</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <p class="info"></p>
                 </div>
+
 
                 <div class="col-md-6 col-md-offset-3">
                     <button class="display_content" id="second_post">
@@ -89,7 +116,7 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
                     <button class="view_more_post newest">← Newest Posts</button>
                 </div>
             </div>
-        <footer class = "row">
+        <footer class="row">
             <div class="col-md-offset-3">Copyright&copy 2015</div>
         </footer>
         </div> <!--En of div "container-fluid"-->

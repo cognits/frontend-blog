@@ -39,9 +39,13 @@ $(document).ready(function () {
     $(".posts4").hide();
     $(".three_four_posts").hide();
     $(".newest").hide();
+    $("#commentary_button1").hide();
+    $(".comments_user").hide();
 
     $("#first_post").click(function() {
       $(".posts").slideToggle();
+      $("#commentary_button1").slideToggle();
+      $(".comments_user").slideToggle();
     });
 
     $("#second_post").click(function() {
@@ -76,6 +80,11 @@ $(document).ready(function () {
     },
       function() {
         $(this).removeClass("active_button");
+    });
+
+    $("#save_comment").click(function() {
+        var toAdd = $("input[name=comment_input1]").val();
+        $('.comments_user').append('<div class="user_comment">'+ toAdd + '</div>');
     });
   });
 });
