@@ -1,25 +1,22 @@
 /*the title of blog */
 *{
-    border-color: black solid;
+    borde
+    : black solid;
 }
+
 .header{
     font-size: 20px;
     color: #808080;
     margin: 0.5%;
     display: inline-block;
 }
+
 hr{
     margin-left: 15%;
     margin-right: 15%;
-
 }
+
 /*for the button home*/
-.texthome{
-
-    margin: 0.5%;
-
-}
-
 .home{
     font-size: 15px;
     color: #808080;
@@ -27,7 +24,6 @@ hr{
     float: right;
     text-decoration:none;
     cursor:pointer;
-
 }
 
 .titlegeneral{
@@ -40,35 +36,32 @@ hr{
     margin-left: 15%;
     margin-right: 15%;
 }
+
 .textCognits{
     font-size: 25px;
     margin-left: 15%;
     margin-right: 15%;
-}
+}/*End the botton Home*/
 
 /*This is the search box on the page*/
-input{
-    box-shadow: 0 0 7px #9a9a9a;
-
-}
-#button{
+#buttonsearch{
     display: inline-block;
     height:20px;
     width: 20px;
     background-color:#ffffff;
-    font-family:arial;
     color:#808080;
     border-radius: 3%;
-    text-align:center;
     margin-top:2px;
 }
 
 .list {
+    float: right;
     font-family:Arial;
     color: #808080;
 }
 
-.panel {
+.panelsearch {
+    margin-right: 2%;
     font-size: 15px;
     color:#9a9a9a;
     height:25px;
@@ -81,17 +74,15 @@ input{
     display:inline-block;
     position:relative;
     margin: 0.5%;
+    margin-right: 2%;
     width:50px;
     height:20px;
     font-family:arial,sans-serif;
     font-size:15px;
-    color:#ffffff;
     color: #808080;
-    text-decoration:none;
     cursor:pointer;
     float: right;
 }
-
 
 .slide{
     display:inline-block;
@@ -99,10 +90,11 @@ input{
 }
 
 .resaltarTexto{
-    color: #F3AA04;
-    background-color: #FFFF96;
+    color: #f3aa04;
+    background-color: #ffff96;
     border-radius: 3%;
-}
+}/*End the search box*/
+
 
 /*The first post*/
 .first{
@@ -116,14 +108,12 @@ input{
     color:#1d80e2;
     font-weight: bold;
 }
-
 .post1 {
     font-size: 125%;
     color:white;
     display:none;
     font-family:arial,serif;
 }
-
 .pull1 {
     display:inline-block;
     margin: 0.5%;
@@ -132,11 +122,11 @@ input{
 }
 
 
+
 .titles{
     font-size: 35px;
     color:#1d80e2;
     font-weight: bold;
-
 }
 .post2 {
     font-size: 15px;
@@ -144,7 +134,6 @@ input{
     display:none;
     font-family:arial,serif;
 }
-
 .pull2 {
     display:inline-block;
     margin: 0.5%;
@@ -153,11 +142,11 @@ input{
 }
 
 
+
 .titless{
     font-size: 35px;
     color:#1d80e2;
     font-weight: bold;
-
 }
 .post3 {
     font-size: 15px;
@@ -165,7 +154,6 @@ input{
     display:none;
     font-family:arial,serif;
 }
-
 .pull3 {
     display:inline-block;
     margin: 0.5%;
@@ -178,7 +166,6 @@ input{
     font-size: 35px;
     color:#1d80e2;
     font-weight: bold;
-
 }
 .post4 {
     font-size: 15px;
@@ -186,7 +173,6 @@ input{
     display:none;
     font-family:arial,serif;
 }
-
 .pull4 {
     display:inline-block;
     margin: 0.5%;
@@ -195,11 +181,11 @@ input{
 }
 
 
+
 .title5{
     font-size: 35px;
     color:#1d80e2;
     font-weight: bold;
-
 }
 .post5 {
     font-size: 15px;
@@ -207,13 +193,13 @@ input{
     display:none;
     font-family:arial,serif;
 }
-
 .pull5 {
     display:inline-block;
     margin: 0.5%;
     font-family:arial,sans-serif;
     font-size:15px;
 }
+
 
 
 
@@ -230,7 +216,6 @@ input{
     display:none;
     font-family:arial,serif;
 }
-
 .pull6 {
     display:inline-block;
     margin: 0.5%;
@@ -242,7 +227,7 @@ input{
 #oculto{
     display: none;
 }
-.bottonPost{
+.otherpost{
     width: 130px;
     margin-left: 15%;
     margin-right: 15%;
@@ -264,7 +249,7 @@ input{
     float: right;
 }
 
-.copy{
+.copyright{
     margin-left: 15%;
     margin-right: 15%;
     display:inline-block;
@@ -317,25 +302,14 @@ input{
     cursor:pointer;
 }
 
-span{
-    color: #1d80e2;
-    text-decoration: none;
-}
+
 a{
     color: #1d80e2;
     text-decoration: none;
 
 }
 
-.date{
-text-decoration: none;
-font-size: 17px;
 
-}
-
-p{
-    text-decoration: none;
-}
 .date{
 text-decoration: none;
 font-size: 17px;
@@ -370,7 +344,6 @@ font-size: 17px;
 
 
 .hizquierda{
-max-width: 50%;
 float: left;
 
 }
@@ -383,24 +356,24 @@ float: right;
     color: black;
 }
 
-form {
-    display: inline-block;
-}
 
 #add{
     display: inline-block;
     height:20px;
     width:70px;
-    background-color:#cc0000;
+    background-color:#0046b4;
     font-family:arial;
     font-weight:bold;
     color:#ffffff;
     border-radius: 5px;
     text-align:center;
     margin-top:2px;
+    cursor:pointer;
+    float: right;
 }
 
 .coments{
     font-family:garamond;
     color:#cc0000;
+    text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
 }

@@ -29,11 +29,14 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
 </head>
 
     <body id="texto">
+    <div id="texto">
+        <!--For the title of cognits-->
         <div class="header">Congnits Blog</div>
+
         <!--This is the search box on the page-->
-        <div class="panel">
-                <input type="text" name="checkListForm" id="cajaTexto" on="resaltarTexto();"/>
-            <div id="button"  onClick="resaltarTexto();"><img src="images/lupa.png" id="button" ></div>
+        <div class="panelsearch" .keyup="resaltarTexto();"><!--the botton search-->
+                <input type="text" name="checkListForm" id="cajaTexto" />
+            <div id="buttonsearch"  onClick="resaltarTexto();"><img src="images/lupa.png" id="buttonsearch" ></div>
             <br/>
             <div class="lista" id="texto p"></div> 
         </div>
@@ -47,17 +50,17 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
         </div>
 
         <div id="muestra">
-            <!--the first post-->
             <div class="first">
                 <div ><p class="title"></p></div>
-                <div id="show"class="pull1" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"></div>
+                <div id="show" type="button" class="pull1" class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-lg"></div>
                 <p class="date"><p>
-                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal fade bs-example-modal-lg" tabindex="-5" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="post1">
                                 <div class="hizquierda">
-                                    <div class="title modal-title" id="gridSystemModalLabel"></div>
+                                    <button type="button" class=" close" data-dismiss="modal" arial-label="close"><span arial-hidden="true">x</span></button>
+                                    <div class="title"></div>
                                     <div class="content" ></div>
                                     <center><img src="images/materiaDensa.jpg" class="imagezise"/></center>
                                     <br/>
@@ -66,39 +69,92 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
                                     <p class="date"><p>
                                 </div>
                                 <div class="coment">
-                                    <button type="button" class=" close" data-dismiss="modal" arial-label="close"><span arial-hidden="true">x</span></button>
-                                    <div>
-                                        <div class="coments"></div>
-                                        <form name="checkListForm">
+                                            <p>Comentarios</p>
+                                            <div class="coments"></div>
                                             <input type="text" name="checkListItem"/>
-                                        </form>
                                         <div id="add">Add!</div>
                                         <br/>
-                                    </div>
                                 </div>
-                             <!--end the post1 container-->
-                                </div>
+                            </div><!--end  -->
                         </div>
                       </div>
                     </div>
             </div><!--end the firsth post -->
-                <hr/>
-            <!--The second post-->
+
+
+
+            <hr/>
             <div class="first">
                 <div ><p class="titles"></p></div>
-                <div id="shows" class="pull2"></div>
-                <p class="dates"></p>
-                <div class="post2">
-                <div class="contents"></div>
-                <img src="images/galaxia.jpg" class="imagezise"/>
-                </div>
+                <div id="shows" type="button" class="pull2" class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-lg"></div>
+                <p class="dates"><p>
+                    <div class="modal fade bs-example-modal-lg" tabindex="-5" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="post2">
+                                <div class="hizquierda">
+                                    <button type="button" class=" close" data-dismiss="modal" arial-label="close"><span arial-hidden="true">x</span></button>
+                                    <div class="title"></div>
+                                    <div class="contents" ></div>
+                                    <center><img src="images/galaxia.jpg" class="imagezise"/></center>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <p class="date"><p>
+                                </div>
+                                <div class="coment">
+                                            <p>Comentarios</p>
+                                            <div class="coments"></div>
+                                            <input type="text" name="checkListItem"/>
+                                        <div id="add">Add!</div>
+                                        <br/>
+                                </div>
+                            </div><!--end  -->
+                        </div>
+                      </div>
+                    </div>
             </div>
-                <hr/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 <hr/>
-                <div class="bottonPost" id="mostrar">Other Post  →</div>
+                <hr/>
+                <div class="otherpost" id="mostrar">Other Post  →</div>
                 <hr/>
         </div>
+
+
         <div id="oculto">
                 <hr/>
             <!--the tirth post-->
@@ -126,7 +182,9 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
                 <p class="back" id="ocultar">Back  ←</p>
                 <hr/>
         </div>
-        <p class="copy">Copyright © Your Website 2015</p>
+        </div>
+        <p class="copyright">Copyright © Your Website 2015</p>
+
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->

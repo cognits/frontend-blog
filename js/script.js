@@ -2,7 +2,7 @@
 
 //This is the search box on the page
 $(document).ready(function(){
-    $('#button').click(function() {
+    $('#buttonsearch').click(function() {
         var toAdd = $('input[name=checkListItem]').val();   
         $('.list').append('<div class="item">' + toAdd + '</div>')
     });
@@ -11,10 +11,9 @@ $(document).ready(function(){
 //This is the search box on the page
 $(document).ready(function(){
     $('.pull-me').click(function(){
-        $(".panel").slideToggle('slow');
+        $(".panelsearch").slideToggle('slow');
     });
 });
-
 //This is the search box on the page!!!! 
 jQuery.fn.extend({
     resaltar: function(busqueda, claseCSSbusqueda){
@@ -26,8 +25,9 @@ jQuery.fn.extend({
     }
 });
 //To highlight text
+
 function resaltarTexto(){
-    $("#texto").resaltar(cajaTexto.value, "resaltarTexto");
+    $("body").resaltar(cajaTexto.value, "resaltarTexto");
 }
 //end tehe search box
 
@@ -171,4 +171,22 @@ $(document).ready(function(){
         var toAdd = $('input[name=checkListItem]').val();   
         $('.coments').append('<div class="item">' + toAdd + '</div>')
     });
+});
+
+
+$('input').each(function(){
+   // tomamos el valor actual del input
+   var currentValue = $(this).val();
+   // en el focus() comparamos si es el mismo por defecto, y si es asi lo vaciamos
+   $(this).focus(function(){
+      if( $(this).val() == currentValue ) {
+         $(this).val('');
+      };
+   });
+   // en el blur, si el usuario dejo el value vacio, lo volvemos a restablecer
+   $(this).blur(function(){
+      if( $(this).val() == '' ) {
+         $(this).val(currentValue);
+      };
+   });
 });
