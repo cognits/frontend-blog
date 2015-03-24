@@ -39,27 +39,37 @@ $(document).ready(function () {
     $(".posts4").hide();
     $(".three_four_posts").hide();
     $(".newest").hide();
-    $("#title_cmmt1").hide();
-    $("#commentary_button1").hide();
+    $(".title_comment").hide();
+    $(".show_modal").hide();
     $(".comments_user").hide();
 
     $("#first_post").click(function() {
       $(".posts").slideToggle();
       $("#title_cmmt1").slideToggle();
       $("#commentary_button1").slideToggle();
-      $(".comments_user").slideToggle();
+      $("#comment_div1").slideToggle();
     });
 
     $("#second_post").click(function() {
       $(".posts2").slideToggle();
+      $("#title_cmmt2").slideToggle();
+      $("#commentary_button2").slideToggle();
+      $("#comment_div2").slideToggle();
     });
 
     $("#third_post").click(function() {
       $(".posts3").slideToggle();
+      $("#title_cmmt3").slideToggle();
+      $("#commentary_button3").slideToggle();
+      $("#comment_div3").slideToggle();
     });
 
     $("#fourth_post").click(function() {
       $(".posts4").slideToggle();
+      $("#title_cmmt4").slideToggle();
+      $("#commentary_button4").slideToggle();
+      $("#comment_div4").slideToggle();
+
     });
 
     $(".older").click(function() {
@@ -88,7 +98,31 @@ $(document).ready(function () {
         var to_add_name = $("input[name='name_input1']").val();
         var to_add_comment = $("#comment_input1").val();
         if (to_add_comment != '' && to_add_name != '') {
-          append('.comments_user',to_add_name,to_add_comment);
+          append('#comment_div1',to_add_name,to_add_comment);
+        };
+    });
+
+    $("#save_comment2").click(function() {
+        var to_add_name = $("input[name='name_input2']").val();
+        var to_add_comment = $("#comment_input2").val();
+        if (to_add_comment != '' && to_add_name != '') {
+          append('#comment_div2',to_add_name,to_add_comment);
+        };
+    });
+
+    $("#save_comment3").click(function() {
+        var to_add_name = $("input[name='name_input3']").val();
+        var to_add_comment = $("#comment_input3").val();
+        if (to_add_comment != '' && to_add_name != '') {
+          append('#comment_div3',to_add_name,to_add_comment);
+        };
+    });
+
+    $("#save_comment4").click(function() {
+        var to_add_name = $("input[name='name_input4']").val();
+        var to_add_comment = $("#comment_input4").val();
+        if (to_add_comment != '' && to_add_name != '') {
+          append('#comment_div4',to_add_name,to_add_comment);
         };
     });
 

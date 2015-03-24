@@ -48,27 +48,30 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
             </div>
 
             <div class="row one_two_posts">
-                <div class="col-md-6 col-md-offset-3 first_post">
+                <!--container first post-->
+                <div class="col-md-6 col-md-offset-3 upper_post">
                     <button class="display_content" id="first_post">
                         <h1 class="title coloured"></h1>
                     </button>
                     <p class="posts"></p>
                     <h4 class="title_comment" id="title_cmmt1">Comments</h4>
-                    <div class="comments_user"></div>
+                    <div class="comments_user" id="comment_div1"></div>
 
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_post1" id="commentary_button1">
+                    <button type="button" class="btn btn-primary show_modal" data-toggle="modal" data-target="#modal_post1" id="commentary_button1">
                         Comment
                     </button>
 
+
+                    <!--Modal first post-->
                     <div class="modal fade" id="modal_post1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">Post a Comment</h4>
+                                    <h4 class="modal-title" id="myModalLabel1">Post a Comment</h4>
                                 </div>
 
                                 <div class="modal-body">
-                                    <form name="name_form">
+                                    <form name="name_form1">
                                         Name <input type="text" class="form-control" maxlength="15" name="name_input1" value="" onfocus="javascript:this.value=''"></input>
                                     </form>
                                     <div class="form-group">
@@ -83,9 +86,9 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> <!--End Modal-->
                     <p class="info"></p>
-                </div>
+                </div> <!--End upper_post div-->
 
 
                 <div class="col-md-6 col-md-offset-3">
@@ -93,24 +96,125 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
                         <h1 class="title2 coloured"></h1>
                     </button>
                     <p class="posts2"></p>
+                    <h4 class="title_comment" id="title_cmmt2">Comments</h4>
+                    <div class="comments_user" id="comment_div2"></div>
+
+                    <button type="button" class="btn btn-primary show_modal" data-toggle="modal" data-target="#modal_post2" id="commentary_button2">
+                        Comment
+                    </button>
+
+                    <!--Modal second-->
+                    <div class="modal fade" id="modal_post2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel2">Post a Comment</h4>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form name="name_form2">
+                                        Name <input type="text" class="form-control" maxlength="15" name="name_input2" value="" onfocus="javascript:this.value=''"></input>
+                                    </form>
+                                    <div class="form-group">
+                                        Comment<textarea maxlength="150" class="form-control" id="comment_input2" onfocus="javascript:this.value=''">
+                                        </textarea>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="javascript:input[name=comment_input1].value=''">Close</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="save_comment2">Post</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--End Modal-->
+
                     <p class="info2"></p>
                 </div>
             </div> <!--En of .one_two_posts-->
 
+
             <div class="row three_four_posts">
-                <div class="col-md-6 col-md-offset-3 first_post">
+                <div class="col-md-6 col-md-offset-3 upper_post">
                     <button class="display_content" id = "third_post">
                         <h1 class="title3 coloured"></h1>
                     </button>
                     <p class="posts3"></p>
+                    <h4 class="title_comment" id="title_cmmt3">Comments</h4>
+                    <div class="comments_user" id="comment_div3"></div>
+
+                    <button type="button" class="btn btn-primary show_modal" data-toggle="modal" data-target="#modal_post3" id="commentary_button3">
+                        Comment
+                    </button>
+
+                    <!--third modal-->
+                    <div class="modal fade" id="modal_post3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel3">Post a Comment</h4>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form name="name_form3">
+                                        Name <input type="text" class="form-control" maxlength="15" name="name_input3" value="" onfocus="javascript:this.value=''"></input>
+                                    </form>
+                                    <div class="form-group">
+                                        Comment<textarea maxlength="150" class="form-control" id="comment_input3" onfocus="javascript:this.value=''">
+                                        </textarea>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="javascript:input[name=comment_input1].value=''">Close</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="save_comment3">Post</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--End Modal-->
+
                     <p class="info3"></p>
-                </div>
+                </div> <!--End of upper_post-->
 
                 <div class="col-md-6 col-md-offset-3">
                     <button class="display_content" id="fourth_post">
                         <h1 class="title4 coloured"></h1>
                     </button>
                     <p class="posts4"></p>
+
+                    <h4 class="title_comment" id="title_cmmt4">Comments</h4>
+                    <div class="comments_user" id="comment_div4"></div>
+
+                    <button type="button" class="btn btn-primary show_modal" data-toggle="modal" data-target="#modal_post4" id="commentary_button4">
+                        Comment
+                    </button>
+
+
+                    <div class="modal fade" id="modal_post4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel4">Post a Comment</h4>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form name="name_form4">
+                                        Name <input type="text" class="form-control" maxlength="15" name="name_input4" value="" onfocus="javascript:this.value=''"></input>
+                                    </form>
+                                    <div class="form-group">
+                                        Comment<textarea maxlength="150" class="form-control" id="comment_input4" onfocus="javascript:this.value=''">
+                                        </textarea>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="javascript:input[name=comment_input1].value=''">Close</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="save_comment4">Post</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--End Modal-->
+
                     <p class="info4"></p>
                 </div>
             </div>
