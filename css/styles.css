@@ -10,8 +10,8 @@
 }
 hr{
     margin-left: 15%;
-    margin-right: 15%;}
-    display:inline-block;
+    margin-right: 15%;
+
 }
 /*for the button home*/
 .texthome{
@@ -118,8 +118,8 @@ input{
 }
 
 .post1 {
-    font-size: 15px;
-    color:#9a9a9a;
+    font-size: 125%;
+    color:white;
     display:none;
     font-family:arial,serif;
 }
@@ -345,7 +345,7 @@ font-size: 17px;
 text-decoration: none;
 font-size: 17px;
 }
-s
+
 .datess{
 text-decoration: none;
 font-size: 17px;
@@ -367,3 +367,40 @@ font-size: 17px;
 }
 
 
+
+
+.hizquierda{
+max-width: 50%;
+float: left;
+
+}
+
+.coment{
+float: right;
+}
+
+.inputcoment{
+    color: black;
+}
+
+form {
+    display: inline-block;
+}
+
+#add{
+    display: inline-block;
+    height:20px;
+    width:70px;
+    background-color:#cc0000;
+    font-family:arial;
+    font-weight:bold;
+    color:#ffffff;
+    border-radius: 5px;
+    text-align:center;
+    margin-top:2px;
+}
+
+.coments{
+    font-family:garamond;
+    color:#cc0000;
+}

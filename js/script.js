@@ -94,7 +94,7 @@ $(document).ready(function(){
         $(".post3").slideToggle('slow');
     });
 });
-s
+
 //the fourth post
 $(document).ready(function () {
   $(this).load("_posts/posts.json", function(data){
@@ -163,4 +163,12 @@ $("#oculto").show(1000);
 $("#muestra").hide(1000);
 $("#mostrar").hide("slow");
 });
+});
+
+
+$(document).ready(function(){
+    $('#add').click(function() {
+        var toAdd = $('input[name=checkListItem]').val();   
+        $('.coments').append('<div class="item">' + toAdd + '</div>')
+    });
 });
