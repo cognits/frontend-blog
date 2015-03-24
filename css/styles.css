@@ -123,11 +123,39 @@ h1 {
     margin: 0 0 0 0;
 }
 
+input {
+    width: 100%;
+    height: 50px;
+}
+
+textarea {
+    min-height: 75px;
+    max-height: 75px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
 footer {
     padding-top: 1%;
     margin-top: 4%;
     border-top: 1px solid #E6E6E6;
     font-weight: bold;
     color: #656565;
+}
+
+.comments_user {
+    border: 1px solid #E6E6E6;
+    width: 95%;
+    min-height: 50px;
+    margin: auto;
+    margin-bottom: 4%;
+    padding: 2%;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.title_comment {
+    margin-top: 4%;
+    margin-bottom: 1%;
 }
 

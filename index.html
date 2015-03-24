@@ -53,6 +53,7 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
                         <h1 class="title coloured"></h1>
                     </button>
                     <p class="posts"></p>
+                    <h4 class="title_comment" id="title_cmmt1">Comments</h4>
                     <div class="comments_user"></div>
 
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_post1" id="commentary_button1">
@@ -67,9 +68,13 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
                                 </div>
 
                                 <div class="modal-body">
-                                    <form name="comment_form">
-                                        <input type="text" name="comment_input1" value="" onFocus="javascript:this.value=''"/>
+                                    <form name="name_form">
+                                        Name <input type="text" class="form-control" maxlength="15" name="name_input1" value="" onfocus="javascript:this.value=''"></input>
                                     </form>
+                                    <div class="form-group">
+                                        Comment<textarea maxlength="150" class="form-control" id="comment_input1" onfocus="javascript:this.value=''">
+                                        </textarea>
+                                    </div>
                                 </div>
 
                                 <div class="modal-footer">

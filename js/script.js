@@ -39,11 +39,13 @@ $(document).ready(function () {
     $(".posts4").hide();
     $(".three_four_posts").hide();
     $(".newest").hide();
+    $("#title_cmmt1").hide();
     $("#commentary_button1").hide();
     $(".comments_user").hide();
 
     $("#first_post").click(function() {
       $(".posts").slideToggle();
+      $("#title_cmmt1").slideToggle();
       $("#commentary_button1").slideToggle();
       $(".comments_user").slideToggle();
     });
@@ -83,9 +85,16 @@ $(document).ready(function () {
     });
 
     $("#save_comment").click(function() {
-        var toAdd = $("input[name=comment_input1]").val();
-        $('.comments_user').append('<div class="user_comment">'+ toAdd + '</div>');
+        var to_add_name = $("input[name='name_input1']").val();
+        var to_add_comment = $("#comment_input1").val();
+        if (to_add_comment != '' && to_add_name != '') {
+          append('.comments_user',to_add_name,to_add_comment);
+        };
     });
+
+    var append = function(target, input_name, input_comment) {
+      $(target).append('<div class=user_comment>' + '<b>' + input_name + ': </b>' + input_comment + '</div>');
+    };
   });
 });
 
