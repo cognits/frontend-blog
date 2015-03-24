@@ -272,8 +272,9 @@ input{
 
 /*The images*/
 .imagezise{
-max-width: 200px;
-max-height: 200px;
+    max-width: 75%;
+    max-height: 75%;
+    border-radius: 10px;
 }
 
 /*The subtitle*/
@@ -281,33 +282,39 @@ max-height: 200px;
     font-size: 20px;
     color:#1d80e2;
     font-weight: bold;
+    cursor:pointer;
 }
 
 #shows{
     font-size: 20px;
     color:#1d80e2;
     font-weight: bold;
+    cursor:pointer;
 }
 
 #showss{
     font-size: 20px;
     color:#1d80e2;
     font-weight: bold;
+    cursor:pointer;
 }
 #show4{
     font-size: 20px;
     color:#1d80e2;
     font-weight: bold;
+    cursor:pointer;
 }
 #show5{
     font-size: 20px;
     color:#1d80e2;
     font-weight: bold;
+    cursor:pointer;
 }
 #show6{
     font-size: 20px;
     color:#1d80e2;
     font-weight: bold;
+    cursor:pointer;
 }
 
 span{
@@ -338,7 +345,7 @@ font-size: 17px;
 text-decoration: none;
 font-size: 17px;
 }
-
+s
 .datess{
 text-decoration: none;
 font-size: 17px;
@@ -358,3 +365,5 @@ font-size: 17px;
 text-decoration: none;
 font-size: 17px;
 }
+
+

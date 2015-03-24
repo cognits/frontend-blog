@@ -32,7 +32,7 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
         <div class="header">Congnits Blog</div>
         <!--This is the search box on the page-->
         <div class="panel">
-                <input type="text" name="checkListForm" id="cajaTexto" ready="resaltarTexto(handler);"/>
+                <input type="text" name="checkListForm" id="cajaTexto" on="resaltarTexto();"/>
             <div id="button"  onClick="resaltarTexto();"><img src="images/lupa.png" id="button" ></div>
             <br/>
             <div class="lista" id="texto p"></div> 
@@ -50,13 +50,33 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
             <!--the first post-->
             <div class="first">
                 <div ><p class="title"></p></div>
-                <div id="show"class="pull1"></div>
+                <div id="show"class="pull1" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"></div>
                 <p class="date"><p>
-                <div class="post1">
-                <div class="content" ></div>
-                <img src="images/materiaDensa.jpg" class="imagezise"/>
-                </div>
-            </div>
+                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="post1">
+s
+
+                                <div class="col-md-">
+                                    <div class="title"></div>
+                                    <div class="content" ></div>
+                                    <center><img src="images/materiaDensa.jpg" class="imagezise"/></center>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <p class="date"><p>
+                                </div>
+                                <div class="col-md-">
+                                    <button type="button" class=" close" data-dismiss="modal" arial-label="close"><span arial-hidden="true">x</span></button>
+                                    <div></div>
+                                </div>
+                            </div> <!--end the post1 container-->
+
+                        </div>
+                      </div>
+                    </div>
+            </div><!--end the firsth post -->
                 <hr/>
             <!--The second post-->
             <div class="first">
@@ -69,33 +89,14 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
                 </div>
             </div>
                 <hr/>
-            <!--the tirth post-->
-            <div class="first">
-                <div ><p class="titless"></p></div>
-                <div id="showss" class="pull3"></div>
-                <p class="datess"></p>
-                <div class="post3">
-                <div class="contentss"></div>
-                <img src="images/satelites.jpg" class="imagezise"/>
-                </div> 
-            </div>
+
                 <hr/>
                 <div class="bottonPost" id="mostrar">Other Post  →</div>
                 <hr/>
         </div>
         <div id="oculto">
-            <!--the fourth post-->
-            <div class="first">
-                <div > <p class="title4"></p></div>
-                <div id="show4" class="pull4"></div>
-                <p class="date4"></p>
-                <div class="post4">
-                <div class="content4"></div>
-                <img src="images/tierra.jpg" class="imagezise"/>
-                </div>
-            </div>
                 <hr/>
-            <!--the fifth post-->
+            <!--the tirth post-->
             <div class="first">
                 <div > <p class="title5"></p></div>
                 <div id="show5" class="pull5"></div>
@@ -106,7 +107,7 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
                 </div>
             </div>
                 <hr/>
-            <!--the sixth post-->
+            <!--the fourth post-->
             <div class="first">
                 <div > <p class="title6"></p></div>
                 <div id="show6" class="pull6"></div>
@@ -121,7 +122,6 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
                 <hr/>
         </div>
         <p class="copy">Copyright © Your Website 2015</p>
-
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->

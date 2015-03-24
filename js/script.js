@@ -94,7 +94,7 @@ $(document).ready(function(){
         $(".post3").slideToggle('slow');
     });
 });
-
+s
 //the fourth post
 $(document).ready(function () {
   $(this).load("_posts/posts.json", function(data){
