@@ -31,10 +31,8 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
     <body id="texto">
         <div class="header">Congnits Blog</div>
         <!--This is the search box on the page-->
-
-
         <div class="panel">
-                <input type="text" name="checkListForm" id="cajaTexto"/>
+                <input type="text" name="checkListForm" id="cajaTexto" ready="resaltarTexto(handler);"/>
             <div id="button"  onClick="resaltarTexto();"><img src="images/lupa.png" id="button" ></div>
             <br/>
             <div class="lista" id="texto p"></div> 
@@ -48,20 +46,15 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
             <p class="textCognits">The project is to learn to use HTML, CSS and JavaScript</p>
         </div>
 
-
-
         <div id="muestra">
-
-
             <!--the first post-->
             <div class="first">
                 <div ><p class="title"></p></div>
                 <div id="show"class="pull1"></div>
+                <p class="date"><p>
                 <div class="post1">
-                <a class="date"></a>
                 <div class="content" ></div>
                 <img src="images/materiaDensa.jpg" class="imagezise"/>
-                <p class="da">
                 </div>
             </div>
                 <hr/>
@@ -69,10 +62,10 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
             <div class="first">
                 <div ><p class="titles"></p></div>
                 <div id="shows" class="pull2"></div>
+                <p class="dates"></p>
                 <div class="post2">
                 <div class="contents"></div>
                 <img src="images/galaxia.jpg" class="imagezise"/>
-                <div class="dates"></div>
                 </div>
             </div>
                 <hr/>
@@ -80,25 +73,25 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
             <div class="first">
                 <div ><p class="titless"></p></div>
                 <div id="showss" class="pull3"></div>
+                <p class="datess"></p>
                 <div class="post3">
                 <div class="contentss"></div>
                 <img src="images/satelites.jpg" class="imagezise"/>
-                <div class="datess"></div>
                 </div> 
             </div>
                 <hr/>
                 <div class="bottonPost" id="mostrar">Other Post  →</div>
                 <hr/>
-</div>
+        </div>
         <div id="oculto">
             <!--the fourth post-->
             <div class="first">
                 <div > <p class="title4"></p></div>
                 <div id="show4" class="pull4"></div>
+                <p class="date4"></p>
                 <div class="post4">
                 <div class="content4"></div>
                 <img src="images/tierra.jpg" class="imagezise"/>
-                <div class="date4"></div>
                 </div>
             </div>
                 <hr/>
@@ -106,10 +99,10 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
             <div class="first">
                 <div > <p class="title5"></p></div>
                 <div id="show5" class="pull5"></div>
+                <p class="date5"></p>
                 <div class="post5">
                 <div class="content5"></div>
                 <img src="images/apolo.jpg" class="imagezise"/>
-                <div class="date5"></div>
                 </div>
             </div>
                 <hr/>
@@ -117,22 +110,17 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
             <div class="first">
                 <div > <p class="title6"></p></div>
                 <div id="show6" class="pull6"></div>
+                <p class="date6"></p>
                 <div class="post6">
                 <div class="content6"></div>
                 <img src="images/agujero.jpg" class="imagezise"/>
-                <div class="date6"></div>
                 </div>
             </div>
                 <hr/>
                 <p class="back" id="ocultar">Back  ←</p>
                 <hr/>
         </div>
-
         <p class="copy">Copyright © Your Website 2015</p>
-
-
-
-
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
