@@ -11,6 +11,13 @@ $(document).ready(function () {
 
   $(this).load("_posts/posts.json", function(data){
     var posts = JSON.parse(data);
+
+    function order_date (a, b) {
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
+    }
+
+    posts['posts'].sort(order_date);
+
     var info = posts['posts'][0]['by'] + posts['posts'][0]['date'];
     var info2 = posts['posts'][1]['by'] + posts['posts'][1]['date'];
     var info3 = posts['posts'][2]['by'] + posts['posts'][2]['date'];
