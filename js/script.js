@@ -2,7 +2,7 @@
 
 //This is the search box on the page
 $(document).ready(function(){
-    $('#buttonsearch').click(function() {
+    $('.buttonsearch').click(function() {
         var toAdd = $('input[name=checkListItem]').val();   
         $('.list').append('<div class="item">' + toAdd + '</div>')
     });
@@ -59,7 +59,7 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
-    $('#add').click(function() {
+    $('.add').click(function() {
         var toAdd = $('input[name=checkListItem]').val();   
         $('.coments').append('<div class="item">' + toAdd + '</div>')
     });
@@ -146,13 +146,13 @@ $(document).on('ready',function()
 $("#ocultar").click(function(event){
 event.preventDefault();
 $("#muestra").show("slow");
-$("#oculto").hide("slow");
+$(".oculto").hide("slow");
 $("#mostrar").show(1000);
 });
 
 $("#mostrar").click(function(event){
 event.preventDefault();
-$("#oculto").show(1000);
+$(".oculto").show(1000);
 $("#muestra").hide(1000);
 $("#mostrar").hide("slow");
 });

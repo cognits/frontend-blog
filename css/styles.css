@@ -1,8 +1,4 @@
 /*the title of blog */
-*{
-    borde
-    : black solid;
-}
 
 .header{
     font-size: 20px;
@@ -23,6 +19,9 @@ hr{
     margin: 0.5%;
     float: right;
     cursor:pointer;
+}
+a:link{
+    text-decoration: none
 }
 .texthome{
     color: #808080;
@@ -46,7 +45,7 @@ hr{
 }/*End the botton Home*/
 
 /*This is the search box on the page*/
-#buttonsearch{
+.buttonsearch{
     display: inline-block;
     height:20px;
     width: 20px;
@@ -73,7 +72,6 @@ hr{
 }
 
 .pull-me {
-    display:inline-block;
     position:relative;
     margin: 0.5%;
     margin-right: 2%;
@@ -86,8 +84,7 @@ hr{
     float: right;
 }
 
-.slide{
-    display:inline-block;
+.slide{ 
     float: right;
 }
 
@@ -120,10 +117,7 @@ hr{
     display:inline-block;
     margin: 0.5%;
     font-family:arial,sans-serif;
-    font-size:15px;
-}
-#show{
-    font-size: 20px;
+    font-size:20px;
     color:#1d80e2;
     font-weight: bold;
     cursor:pointer;
@@ -149,10 +143,7 @@ font-size: 17px;
     display:inline-block;
     margin: 0.5%;
     font-family:arial,sans-serif;
-    font-size:15px;
-}
-#show1{
-    font-size: 20px;
+    font-size:20px;
     color:#1d80e2;
     font-weight: bold;
     cursor:pointer;
@@ -179,10 +170,7 @@ font-size: 17px;
     display:inline-block;
     margin: 0.5%;
     font-family:arial,sans-serif;
-    font-size:15px;
-}
-#show2{
-    font-size: 20px;
+    font-size:20px;
     color:#1d80e2;
     font-weight: bold;
     cursor:pointer;
@@ -208,10 +196,7 @@ font-size: 17px;
     display:inline-block;
     margin: 0.5%;
     font-family:arial,sans-serif;
-    font-size:15px;
-}
-#show3{
-    font-size: 20px;
+    font-size:20px;
     color:#1d80e2;
     font-weight: bold;
     cursor:pointer;
@@ -222,11 +207,11 @@ font-size: 17px;
 }/*end the fifth post*/
 
 
-#oculto{
+.oculto{
     display: none;
 }
 .otherpost{
-    width: 130px;
+
     margin-left: 15%;
     margin-right: 15%;
     font-size: 20px;
@@ -234,10 +219,10 @@ font-size: 17px;
     border-radius: 15px;
     border: 2px solid #f6f6f6;
     float: right;
+    cursor:pointer;
 }
 
 .back{
-    width: 90px;
     margin-left: 15%;
     margin-right: 15%;
     font-size: 20px;
@@ -245,6 +230,7 @@ font-size: 17px;
     border-radius: 15px;
     border: 2px solid #f6f6f6;
     float: right;
+    cursor:pointer;
 }
 
 .copyright{
@@ -270,7 +256,6 @@ float: right;
 }
 
 .botadd{
-    display: inline-block;
     height:20px;
     width:70px;
     background-color:#0046b4;
@@ -280,11 +265,9 @@ float: right;
     text-align:center;
     margin-top:2px;
     cursor:pointer;
-    float: right;
 }
 
-#add{
-    display: inline-block;
+.add{
     height:20px;
     width:70px;
     background-color:#0046b4;
@@ -294,7 +277,6 @@ float: right;
     text-align:center;
     margin-top:2px;
     cursor:pointer;
-    float: right;
 }
 .coments{
     float: left;
