@@ -4,180 +4,201 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
  -->
 <!DOCTYPE html>
 <!-- saved from url=(0039)http://getbootstrap.com/examples/blog/# -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
-    <title>Cognits Blog</title>
+    <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+        <title>Cognits Blog</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/libs/bootstrap.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="css/libs/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/styles.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/styles.css" rel="stylesheet">
 
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-</head>
+    </head>
 
-    <body id="texto">
-    <div id="texto">
+    <body>
         <!--For the title of cognits-->
         <div class="header">Congnits Blog</div>
-
         <!--This is the search box on the page-->
         <div class="panelsearch" .keyup="resaltarTexto();"><!--the botton search-->
                 <input type="text" name="checkListForm" id="cajaTexto" />
             <div id="buttonsearch"  onClick="resaltarTexto();"><img src="images/lupa.png" id="buttonsearch" ></div>
             <br/>
             <div class="lista" id="texto p"></div> 
-        </div>
-        <div class="pull-me slide">Search</div>
-        <!--The botton home-->
+        </div><!--The end the seach box-->
+        <div class="pull-me slide">Search</div><!--The botton home-->
         <div  class="home"><a href="javascript:location.reload()"><p class="texthome">Home</p></a></div>
         <!--The title of page-->
         <div class="titlegeneral" id="texto">
             <p class="cognits">Cognits Blog</p>
             <p class="textCognits">The project is to learn to use HTML, CSS and JavaScript</p>
         </div>
-
+<!--The posts-->
         <div id="muestra">
-            <div class="first">
+            <!--the first post-->
+            <div class="marginpost">
                 <div ><p class="title"></p></div>
-                <div id="show" type="button" class="pull1" class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-lg"></div>
+                <div id="show" type="button" class="pull1" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"></div>
                 <p class="date"><p>
-                    <div class="modal fade bs-example-modal-lg" tabindex="-5" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-lg">
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="post1">
-                                <div class="hizquierda">
-                                    <button type="button" class=" close" data-dismiss="modal" arial-label="close"><span arial-hidden="true">x</span></button>
-                                    <div class="title"></div>
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="title" class="modal-title" id="myModalLabel"></div>
+                                </div>
+                                <div class="modal-body">
                                     <div class="content" ></div>
                                     <center><img src="images/materiaDensa.jpg" class="imagezise"/></center>
+                                </div>
+                                <div class="modal-footer">
                                     <br/>
                                     <br/>
                                     <br/>
                                     <p class="date"><p>
-                                </div>
-                                <div class="coment">
-                                            <p>Comentarios</p>
-                                            <div class="coments"></div>
-                                            <input type="text" name="checkListItem"/>
+                                    <p>Comentarios</p>
+                                    <div class="coments"></div>
+                                    <div class="coment">
+                                        <input type="text" name="checkListItem"/>
                                         <div id="add">Add!</div>
                                         <br/>
-                                </div>
-                            </div><!--end  -->
-                        </div>
-                      </div>
-                    </div>
+                                    </div>
+                                </div><!--End the modal footer-->
+                            </div><!--end the post 1 -->
+                        </div><!--End the modal-->
+                      </div><!--End the modal-->
+                    </div><!--End the modal-->
             </div><!--end the firsth post -->
-
-
-
             <hr/>
-            <div class="first">
-                <div ><p class="titles"></p></div>
-                <div id="shows" type="button" class="pull2" class="btn btn-primary " data-toggle="modal" data-target=".bs-example-modal-lg"></div>
-                <p class="dates"><p>
-                    <div class="modal fade bs-example-modal-lg" tabindex="-5" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-lg">
+            <!--The second post-->
+            <div class="marginpost">
+                <div ><p class="title1"></p></div>
+                <div id="show1" type="button" class="pull2" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2"></div>
+                <p class="date1"><p>
+                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="post2">
-                                <div class="hizquierda">
-                                    <button type="button" class=" close" data-dismiss="modal" arial-label="close"><span arial-hidden="true">x</span></button>
-                                    <div class="title"></div>
-                                    <div class="contents" ></div>
-                                    <center><img src="images/galaxia.jpg" class="imagezise"/></center>
-                                    <br/>
-                                    <br/>
-                                    <br/>
-                                    <p class="date"><p>
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="title1" class="modal-title" id="myModalLabel"></div>
                                 </div>
-                                <div class="coment">
-                                            <p>Comentarios</p>
-                                            <div class="coments"></div>
-                                            <input type="text" name="checkListItem"/>
-                                        <div id="add">Add!</div>
+                                <div class="modal-body">
+                                    <div class="content1" ></div>
+                                    <center><img src="images/galaxy.jpg" class="imagezise"/></center>
+                                </div>
+                                <div class="modal-footer">
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <p class="date1"><p>
+                                    <p>Comentarios</p>
+                                    <div class="coments2 coments"></div>
+                                    <div class="coment">
+                                        <input type="text" name="checkListItem"/>
+                                        <div id="add2" class="botadd">Add!</div>
                                         <br/>
-                                </div>
-                            </div><!--end  -->
-                        </div>
-                      </div>
-                    </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <hr/>
-                <hr/>
-                <div class="otherpost" id="mostrar">Other Post  →</div>
-                <hr/>
+                                    </div>
+                                </div><!--End the modal footer-->
+                            </div><!--end the post 2 -->
+                        </div><!--End the modal-->
+                      </div><!--End the modal-->
+                    </div><!--End the modal-->
+            </div><!--end the second post -->
+            <br/>
+            <br/>
+            <hr/>
+            <div class="otherpost" id="mostrar">Other Post  →</div>
+            <hr/>
         </div>
 
-
+<!--The other post-->
         <div id="oculto">
                 <hr/>
             <!--the tirth post-->
-            <div class="first">
-                <div > <p class="title5"></p></div>
-                <div id="show5" class="pull5"></div>
-                <p class="date5"></p>
-                <div class="post5">
-                <div class="content5"></div>
-                <img src="images/apolo.jpg" class="imagezise"/>
-                </div>
-            </div>
+            <div class="marginpost">
+                <div ><p class="title2"></p></div>
+                <div id="show2" type="button" class="pull3" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3"></div>
+                <p class="date1"><p>
+                    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="post3">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="title2" class="modal-title" id="myModalLabel"></div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="content2" ></div>
+                                    <center><img src="images/apolo.jpg" class="imagezise"/></center>
+                                </div>
+                                <div class="modal-footer">
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <p class="date2"><p>
+                                    <p>Comentarios</p>
+                                    <div class="coments3 coments"></div>
+                                    <div class="coment">
+                                        <input type="text" name="checkListItem"/>
+                                        <div id="add3" class="botadd">Add!</div>
+                                        <br/>
+                                    </div>
+                                </div><!--End the modal footer-->
+                            </div><!--end the post 3 -->
+                        </div><!--End the modal-->
+                      </div><!--End the modal-->
+                    </div><!--End the modal-->
+            </div><!--end the thirth post -->
                 <hr/>
             <!--the fourth post-->
-            <div class="first">
-                <div > <p class="title6"></p></div>
-                <div id="show6" class="pull6"></div>
-                <p class="date6"></p>
-                <div class="post6">
-                <div class="content6"></div>
-                <img src="images/agujero.jpg" class="imagezise"/>
-                </div>
-            </div>
+            <div class="marginpost">
+                <div ><p class="title3"></p></div>
+                <div id="show3" type="button" class="pull4" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4"></div>
+                <p class="date3"><p>
+                    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="post4">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div class="title3" class="modal-title" id="myModalLabel"></div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="content3" ></div>
+                                    <center><img src="images/agujero.jpg" class="imagezise"/></center>
+                                </div>
+                                <div class="modal-footer">
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <p class="date3"><p>
+                                    <p>Comentarios</p>
+                                    <div class="coments4 coments"></div>
+                                    <div class="coment">
+                                        <input type="text" name="checkListItem"/>
+                                        <div id="add4" class="botadd">Add!</div>
+                                        <br/>
+                                    </div>
+                                </div><!--End the modal footer-->
+                            </div><!--end the post 4 -->
+                        </div><!--End the modal-->
+                      </div><!--End the modal-->
+                    </div><!--End the modal-->
+            </div><!--end the fourth post -->
                 <hr/>
                 <p class="back" id="ocultar">Back  ←</p>
                 <hr/>
@@ -193,4 +214,3 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
         <script src="js/libs/bootstrap.js"></script>
     </body>
 </html>
-

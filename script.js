@@ -31,6 +31,21 @@ function resaltarTexto(){
 }
 //end tehe search box
 
+  $(this).load("_posts/posts.json", function(data){
+    var posts = JSON.parse(data);
+
+    function order_date (a, b) {
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
+    }
+
+    posts['posts'].sort(order_date);
+
+    var posts['posts'][0]['date']);
+    var posts['posts'][1]['date']);
+    var posts['posts'][2]['date']);
+    var posts['posts'][3]['date']);
+
+
 
 
 //Here are the Json
@@ -49,7 +64,7 @@ $(document).ready(function () {
     $(".title").html(posts['posts'][0]['title']);
     $("#show").html(posts['posts'][0]['show']);
     $(".content").html(posts['posts'][0]['content']);
-    $(".date").html(posts['posts'][0]['date']);
+    $(".date").html(date);
   });
 });
 //the slideToggle
@@ -73,7 +88,7 @@ $(document).ready(function () {
     $(".title1").html(posts['posts'][1]['title']);
     $("#show1").html(posts['posts'][1]['show']);
     $(".content1").html(posts['posts'][1]['content']);
-    $(".date1").html(posts['posts'][1]['date']);
+    $(".date1").html(date);
     //
   });
 });
@@ -99,7 +114,7 @@ $(document).ready(function () {
     $(".title2").html(posts['posts'][2]['title']);
     $("#show2").html(posts['posts'][2]['show']);
     $(".content2").html(posts['posts'][2]['content']);
-    $(".date2").html(posts['posts'][2]['date']);
+    $(".date2").html(date);
     //
   });
 });
@@ -123,8 +138,7 @@ $(document).ready(function () {
     $(".title3").html(posts['posts'][3]['title']);
     $("#show3").html(posts['posts'][3]['show']);
     $(".content3").html(posts['posts'][3]['content']);
-    $(".date3").html(posts['posts'][3]['date']);
-    //
+    $(".date3").html(date);    //
   });
 });
 $(document).ready(function(){
