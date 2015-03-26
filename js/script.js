@@ -40,6 +40,7 @@ $(document).ready(function () {
     $(".info4").html(info4);
     //
 
+    $(".search_container").hide();
     $(".posts").hide();
     $(".posts2").hide();
     $(".posts3").hide();
@@ -139,3 +140,32 @@ $(document).ready(function () {
   });
 });
 
+
+$(document).ready(function(){
+    $('#buttonsearch').click(function() {
+        var toAdd = $('input[name=checkListItem]').val();   
+        $('.list').append('<div class="item">' + toAdd + '</div>')
+    });
+});
+
+//This is the search box on the page
+$(document).ready(function(){
+    $('.pull-me').click(function(){
+        $(".panelsearch").slideToggle('slow');
+    });
+});
+//This is the search box on the page!!!! 
+jQuery.fn.extend({
+    resaltar: function(busqueda, claseCSSbusqueda){
+        var regex = new RegExp("(<[^>]*>)|("+ busqueda.replace(/([-.*+?^${}()|[\]\/\\])/g,"\\$1") +')', 'ig');
+        var nuevoHtml=this.html(this.html().replace(regex, function(a, b, c){
+            return (a.charAt(0) == "<") ? a : "<span class=\""+ claseCSSbusqueda +"\">" + c + "</span>";
+        }));
+        return nuevoHtml;
+    }
+});
+//To highlight text
+
+function resaltarTexto(){
+    $("body").resaltar(cajaTexto.value, "resaltarTexto");
+}
