@@ -24,8 +24,9 @@
 
 </head>
 
-    <body>
+    <body class="lista">
         <div class="container-fluid" id="contenedor">
+            <!--Contains the top of the page.-->
             <div class="row up">
                 <div class="col-md-6 upper_text"> <h4>Cognits Blog</h4></div>
                 <div class="col-md-6 text_right "> 
@@ -33,18 +34,17 @@
                         <h5 class="home">Home</h5>
                     </a>
 
-                    <button class="search_text">
-                        <h5>Search</h5>
+                    <button class="search_button">
+                        Search
                     </button>
-
-                    <div class="search_container">
-                        <input type="text" name="checkListForm" id="cajaTexto"/>
-                        <button type="btn btn-primary btn-sm" id="buttonsearch">Search</button>
-                        <div class="lista"></div>
-                    </div>
                 </div>
-            <div class="list"></div>
             </div> <!--End of div "row up"-->
+
+
+            <div class="search_container">
+                <input name="to_search" id="to_search" type="text" class="to_search" onfocus="javascript:this.value=''"/>
+            </div>
+
             <div class="row proyect_purpose">
                 <div class="text_container col-md-offset-3">
                     <h1>Cognits Blog</h1>
@@ -55,8 +55,8 @@
             <div class="row one_two_posts">
                 <!--container first post-->
                 <div class="col-md-6 col-md-offset-3 upper_post">
-                    <button class="display_content title" id="first_post">
-                    </button>
+                    <h1 class="display_content title" id="first_post">
+                    </h1>
                     <p class="posts"></p>
                     <h4 class="title_comment" id="title_cmmt1">Comments</h4>
                     <div class="comments_user" id="comment_div1"></div>
@@ -96,8 +96,8 @@
 
 
                 <div class="col-md-6 col-md-offset-3">
-                    <button class="display_content title2" id="second_post">
-                    </button>
+                    <h1 class="display_content title2" id="second_post">
+                    </h1>
                     <p class="posts2"></p>
                     <h4 class="title_comment" id="title_cmmt2">Comments</h4>
                     <div class="comments_user" id="comment_div2"></div>
@@ -139,8 +139,8 @@
 
             <div class="row three_four_posts">
                 <div class="col-md-6 col-md-offset-3 upper_post">
-                    <button class="display_content title3" id = "third_post">
-                    </button>
+                    <h1 class="display_content title3" id = "third_post">
+                    </h1>
                     <p class="posts3"></p>
                     <h4 class="title_comment" id="title_cmmt3">Comments</h4>
                     <div class="comments_user" id="comment_div3"></div>
@@ -179,8 +179,8 @@
                 </div> <!--End of upper_post-->
 
                 <div class="col-md-6 col-md-offset-3">
-                    <button class="display_content title4" id="fourth_post">
-                    </button>
+                    <h1 class="display_content title4" id="fourth_post">
+                    </h1>
                     <p class="posts4"></p>
 
                     <h4 class="title_comment" id="title_cmmt4">Comments</h4>

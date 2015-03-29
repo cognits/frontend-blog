@@ -6,8 +6,26 @@ h1 {
     font-weight: bold;
 }
 
+.highlight {
+    background-color: #FF0;
+}
 
-.search_text {
+.search_container {
+    margin-top: 3px;
+    max-width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+}
+
+.to_search {
+    max-height: 36px;
+    max-width: 50%;
+    margin-right: 4px;
+
+}
+
+.search_button {
     background-color: white;
     border: 0;
     height: 2%;
@@ -60,35 +78,17 @@ h1 {
     margin-bottom: 2%;
 }
 
-.title {
+
+.display_content {
+    border: 0;
+    text-align: left;
+    margin-left: -3%;
     margin-top: 3%;
-    font-size: 265%;
     font-weight: bold;
     color: #428bca;
+    cursor: pointer;
 }
 
-.title2 {
-    margin-top: 3%;
-    font-size: 265%;
-    font-weight: bold;
-    color: #428bca;
-}
-
-
-.title3 {
-    margin-top: 3%;
-    font-size: 265%;
-    font-weight: bold;
-    color: #428bca;
-}
-
-
-.title4 {
-    margin-top: 3%;
-    font-size: 265%;
-    font-weight: bold;
-    color: #428bca;
-}
 
 .info {
     margin-left: -2.2%;
@@ -118,15 +118,8 @@ h1 {
     font-weight: bold;
 }
 
-.display_content {
-    border: 0;
-    background-color: white;
-    text-align: left;
-    margin-left: -3%;
-}
-
 .view_more_post {
-    max-width: 125px;
+    max-width: 132px;
     border-radius: 54px;
     background-color: white;
     border: 1px solid #D1D1D1;
