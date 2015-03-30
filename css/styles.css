@@ -84,18 +84,29 @@ a:link{
     float: right;
 }
 
-.slide{ 
-    float: right;
+.box{
+    -webkit-box-shadow: 0 0 5px #a7a7a7;
+    -moz-box-shadow: 0 0 5px #a7a7a7;
+    box-shadow: 0 0 5px #a7a7a7;
+    margin-top: 2%
 }
 
-.resaltarTexto{
+.highlight{
     color: #f3aa04;
     background-color: #ffff96;
-    border-radius: 3%;
+
+}
+.noform{
+
+}
+.hide_search{
+    display: inline-block;
+    border: 2px solid #f1f1f1;
+    cursor: pointer; 
 }/*End the search box*/
 
 
-/*The first post */
+/*The POSTS*/
 .marginpost{
     margin-left: 15%;
     margin-right: 15%;
@@ -107,12 +118,14 @@ a:link{
     color:#1d80e2;
     font-weight: bold;
 }
+
 .post1 {
     font-size: 125%;
     color:#9a9a9a;
     display:none;
     font-family:arial,serif;
 }
+
 .pull1 {
     display:inline-block;
     margin: 0.5%;
@@ -122,9 +135,10 @@ a:link{
     font-weight: bold;
     cursor:pointer;
 }
+
 .date{
-text-decoration: none;
-font-size: 17px;
+    text-decoration: none;
+    font-size: 17px;
 }/*end the first post*/
 
 /*The second post*/
@@ -133,12 +147,14 @@ font-size: 17px;
     color:#1d80e2;
     font-weight: bold;
 }
+
 .post2 {
     font-size: 15px;
     color:#9a9a9a;
     display:none;
     font-family:arial,serif;
 }
+
 .pull2 {
     display:inline-block;
     margin: 0.5%;
@@ -148,24 +164,27 @@ font-size: 17px;
     font-weight: bold;
     cursor:pointer;
 }
+
 .date1{
-text-decoration: none;
-font-size: 17px;
+    text-decoration: none;
+    font-size: 17px;
 }/*end the second post*/
 
 
-/*the third post*/
+/*The third post*/
 .title2{
     font-size: 35px;
     color:#1d80e2;
     font-weight: bold;
 }
+
 .post3 {
     font-size: 15px;
     color:#9a9a9a;
     display:none;
     font-family:arial,serif;
 }
+
 .pull3 {
     display:inline-block;
     margin: 0.5%;
@@ -175,9 +194,10 @@ font-size: 17px;
     font-weight: bold;
     cursor:pointer;
 }
+
 .date2{
-text-decoration: none;
-font-size: 17px;
+    text-decoration: none;
+    font-size: 17px;
 }/*end the third post*/
 
 /*the fourth post*/
@@ -186,12 +206,14 @@ font-size: 17px;
     color:#1d80e2;
     font-weight: bold;
 }
+
 .post4{
     font-size: 15px;
     color:#9a9a9a;
     display:none;
     font-family:arial,serif;
 }
+
 .pull4{
     display:inline-block;
     margin: 0.5%;
@@ -201,52 +223,48 @@ font-size: 17px;
     font-weight: bold;
     cursor:pointer;
 }
-.date3{
-text-decoration: none;
-font-size: 17px;
-}/*end the fifth post*/
 
+.date3{
+    text-decoration: none;
+    font-size: 17px;
+}/*end the fifth post*/
 
 .oculto{
     display: none;
-}
-.otherpost{
+}/*The posts hide*/
 
+.bottons{
     margin-left: 15%;
     margin-right: 15%;
     font-size: 20px;
     color:#1d80e2;
     border-radius: 15px;
-    border: 2px solid #f6f6f6;
+    border: 2px solid #f1f1f1;
     float: right;
     cursor:pointer;
-}
+}/*The format botton other post and back*/
 
-.back{
-    margin-left: 15%;
-    margin-right: 15%;
-    font-size: 20px;
-    color:#1d80e2;
-    border-radius: 15px;
-    border: 2px solid #f6f6f6;
-    float: right;
-    cursor:pointer;
-}
+.hover_button{
+    color:#1a73cb;
+    border: 2px solid #bbbbbb;
+    -webkit-box-shadow: 0 0 15px #a7a7a7;
+    -moz-box-shadow: 0 0 15px #a7a7a7;
+    box-shadow: 0 0 15px #a7a7a7;
+}/*The format hover botton other post and back*/
 
 .copyright{
     margin-left: 15%;
     margin-right: 15%;
     display:inline-block;
-}
+}/*footer*/
 
-/*The images*/
 .imagezise{
     max-width: 50%;
     max-height: 50%;
     border-radius: 10px;
-}
+}/*The images*/
 
-
+/*The coments of post*/
 .coment{
 float: right;
 }
@@ -261,26 +279,16 @@ float: right;
     background-color:#0046b4;
     font-family:arial;
     font-weight:bold;
-    border-radius: 5px;
+    border-radius: 3px;
     text-align:center;
     margin-top:2px;
     cursor:pointer;
-}
+}/*to add comments*/
 
-.add{
-    height:20px;
-    width:70px;
-    background-color:#0046b4;
-    font-family:arial;
-    font-weight:bold;
-    border-radius: 5px;
-    text-align:center;
-    margin-top:2px;
-    cursor:pointer;
-}
+
 .coments{
     float: left;
     font-family:garamond;
     color:#0046b4;
-    text-shadow: -1px -1px 1px #333;
+    font-size: 17px;
 }

@@ -9,30 +9,52 @@ $(document).ready(function(){
 });
 
 //This is the search box on the page
-$(document).ready(function(){
-    $('.pull-me').click(function(){
-        $(".panelsearch").slideToggle('slow');
-    });
+
+
+
+$(document).on('ready',function()
+{
+$(".pull-me").click(function(event){
+event.preventDefault();
+$(".panelsearch").show("slow");
+$(".pull-me").hide("slow");
+$(".hide_search").show("slow");
 });
+
+$(".hide_search").click(function(event){
+event.preventDefault();
+$(".pull-me").show(1000);
+$(".panelsearch").hide(1000);
+});
+});
+
 //This is the search box on the page!!!! 
 jQuery.fn.extend({
-    resaltar: function(busqueda, claseCSSbusqueda){
-        var regex = new RegExp("(<[^>]*>)|("+ busqueda.replace(/([-.*+?^${}()|[\]\/\\])/g,"\\$1") +')', 'ig');
-        var nuevoHtml=this.html(this.html().replace(regex, function(a, b, c){
-            return (a.charAt(0) == "<") ? a : "<span class=\""+ claseCSSbusqueda +"\">" + c + "</span>";
+    mark: function(search1, classCCSSsearch){
+        var regex = new RegExp("(<[^>]*>)|("+ search1.replace(/([-.*+?^${}()|[\]\/\\])/g,"\\$1") +')', 'ig');
+        var newHtml=this.html(this.html().replace(regex, function(a, b, c){
+            return (a.charAt(0) == "<") ? a : "<span class=\""+ classCCSSsearch +"\">" + a + "</span>";
         }));
-        return nuevoHtml;
+        return newHtml;
     }
 });
 //To highlight text
-
-function resaltarTexto(){
-    $("body").resaltar(cajaTexto.value, "resaltarTexto");
+function highlightText(){
+    $('#ola').mark(textbox.value,"highlight");
 }
 //end tehe search box
 
 
+  $(this).load("_posts/posts.json", function(data){
+    var posts = JSON.parse(data);
 
+    //
+    function order_date (date1, date2) {
+      return new Date(date2.date).getTime() - new Date(date1.date).getTime();
+    }
+
+    posts['posts'].sort(order_date);
+});
 //Here are the Json
 $(document).ready(function () {
   // $.get("_posts/2014-11-09.json", function(data){
@@ -49,7 +71,8 @@ $(document).ready(function () {
     $(".title").html(posts['posts'][0]['title']);
     $("#show").html(posts['posts'][0]['show']);
     $(".content").html(posts['posts'][0]['content']);
-    $(".date").html(posts['posts'][0]['date']);
+    $(".date").html(posts['posts'][0]['inf'] + posts['posts'][0]['date']);
+
   });
 });
 //the slideToggle
@@ -60,10 +83,13 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     $('.add').click(function() {
-        var toAdd = $('input[name=checkListItem]').val();   
-        $('.coments').append('<div class="item">' + toAdd + '</div>')
+        var toAdd = $('input[name=checkListItem1]').val();   
+        $('.coments1').append('<div class="item">' + toAdd + '</div>')
+        $("input[name=checkListItem1]").val("");
+        $("#clcoment1").val("");
     });
 });
+
 //ehd the first post
 
 //the second post
@@ -73,7 +99,7 @@ $(document).ready(function () {
     $(".title1").html(posts['posts'][1]['title']);
     $("#show1").html(posts['posts'][1]['show']);
     $(".content1").html(posts['posts'][1]['content']);
-    $(".date1").html(posts['posts'][1]['date']);
+    $(".date1").html(posts['posts'][1]['inf'] + posts['posts'][1]['date']);
     //
   });
 });
@@ -85,8 +111,10 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     $('#add2').click(function() {
-        var toAdd = $('input[name=checkListItem]').val();   
+        var toAdd = $('input[name=checkListItem2]').val();   
         $('.coments2').append('<div class="item">' + toAdd + '</div>')
+        $("input[name=checkListItem2]").val("");
+        $("#clcoment2").val("");
     });
 });
 //end the second post
@@ -99,7 +127,7 @@ $(document).ready(function () {
     $(".title2").html(posts['posts'][2]['title']);
     $("#show2").html(posts['posts'][2]['show']);
     $(".content2").html(posts['posts'][2]['content']);
-    $(".date2").html(posts['posts'][2]['date']);
+    $(".date2").html(posts['posts'][2]['inf'] + posts['posts'][2]['date']);
     //
   });
 });
@@ -111,8 +139,10 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     $('#add3').click(function() {
-        var toAdd = $('input[name=checkListItem]').val();   
+        var toAdd = $('input[name=checkListItem3]').val();   
         $('.coments3').append('<div class="item">' + toAdd + '</div>')
+        $("input[name=checkListItem3]").val("");
+        $("#clcoment3").val("");
     });
 });
 
@@ -123,7 +153,7 @@ $(document).ready(function () {
     $(".title3").html(posts['posts'][3]['title']);
     $("#show3").html(posts['posts'][3]['show']);
     $(".content3").html(posts['posts'][3]['content']);
-    $(".date3").html(posts['posts'][3]['date']);
+    $(".date3").html(posts['posts'][3]['inf'] + posts['posts'][3]['date']);
     //
   });
 });
@@ -134,8 +164,10 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     $('#add4').click(function() {
-        var toAdd = $('input[name=checkListItem]').val();   
+        var toAdd = $('input[name=checkListItem4]').val();   
         $('.coments4').append('<div class="item">' + toAdd + '</div>')
+        $("input[name=checkListItem4]").val("");
+        $("#clcoment4").val("");
     });
 });
 //end the posts
@@ -159,3 +191,10 @@ $("#mostrar").hide("slow");
 });
 
 
+ $(".bottons").hover(
+      function() {
+        $(this).addClass("hover_button");
+    },
+      function() {
+        $(this).removeClass("hover_button");
+    });

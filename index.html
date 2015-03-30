@@ -19,7 +19,6 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
         <!-- Custom styles for this template -->
         <link href="css/styles.css" rel="stylesheet">
 
-
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -29,12 +28,14 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
     </head>
 
     <body>
+    <div id="ola">
         <!--For the title of cognits-->
         <div class="header">Congnits Blog</div>
         <!--This is the search box on the page-->
         <div class="panelsearch"><!--the botton search-->
-                <input type="text" name="checkListForm" id="cajaTexto" />
-            <div class="buttonsearch"  onClick="resaltarTexto();"><img src="images/lupa.png" class ="buttonsearch" alt="image the search "></div>
+            <div class="hide_search ">></div>
+                <input type="text" name="checkListForm" id="textbox" class="box" onfocus="javascript:this.value=''"/>
+            <div class="buttonsearch"  onClick="highlightText();"><img src="images/lupa.png" class ="buttonsearch" alt="image the search "></div>
             <br/>
             <div class="lista" id="texto p"></div> 
         </div><!--The end the seach box-->
@@ -69,11 +70,11 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
                                     <br/>
                                     <br/>
                                     <p class="date"><p>
-                                    <p>Comentarios</p>
-                                    <div class="coments"></div>
+                                    <p>Commentation</p>
+                                    <div class="coments1 coments"></div>
                                     <div class="coment">
-                                        <input type="text" name="checkListItem"/>
-                                        <div class="add">Add!</div>
+                                        <input type="text" name="checkListItem1" maxlength="140" id="clcoment1" class="form-control" onfocus="javascript:this.value=''"/>
+                                        <div class="add botadd">Add!</div>
                                         <br/>
                                     </div>
                                 </div><!--End the modal footer-->
@@ -105,10 +106,10 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
                                     <br/>
                                     <br/>
                                     <p class="date1"><p>
-                                    <p>Comentarios</p>
+                                    <p>Commentation</p>
                                     <div class="coments2 coments"></div>
                                     <div class="coment">
-                                        <input type="text" name="checkListItem"/>
+                                        <input type="text" name="checkListItem2" maxlength="140" id="clcoment2" class="form-control" onfocus="javascript:this.value=''"/>
                                         <div id="add2" class="botadd">Add!</div>
                                         <br/>
                                     </div>
@@ -121,7 +122,8 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
             <br/>
             <br/>
             <hr/>
-            <div class="otherpost" id="mostrar">Other Post  →</div>
+            <div class="bottons" id="mostrar">Other Post  →</div>
+            <br/>
             <hr/>
         </div>
 
@@ -150,10 +152,10 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
                                     <br/>
                                     <br/>
                                     <p class="date2"><p>
-                                    <p>Comentarios</p>
+                                    <p>Commentation</p>
                                     <div class="coments3 coments"></div>
                                     <div class="coment">
-                                        <input type="text" name="checkListItem"/>
+                                        <input type="text" name="checkListItem3" maxlength="140" id="clcoment3" class="form-control" onfocus="javascript:this.value=''"/>
                                         <div id="add3" class="botadd">Add!</div>
                                         <br/>
                                     </div>
@@ -186,10 +188,10 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
                                     <br/>
                                     <br/>
                                     <p class="date3"><p>
-                                    <p>Comentarios</p>
+                                    <p>Commentation</p>
                                     <div class="coments4 coments"></div>
                                     <div class="coment">
-                                        <input type="text" name="checkListItem"/>
+                                        <input type="text" name="checkListItem4" maxlength="140" id="clcoment4" class="form-control" onfocus="javascript:this.value=''"/>
                                         <div id="add4" class="botadd">Add!</div>
                                         <br/>
                                     </div>
@@ -200,17 +202,22 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
                     </div><!--End the modal-->
             </div><!--end the fourth post -->
                 <hr/>
-                <p class="back" id="ocultar">Back  ←</p>
+                <p class="bottons" id="ocultar">Back  ←</p>
+                <br/>
+                <br/>
                 <hr/>
         </div>
         </div>
         <p class="copyright">Copyright © Your Website 2015</p>
-
+    </div>
+        </div>
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="js/libs/jquery-2.1.1.js"></script>
         <script src="js/script.js"></script>
         <script src="js/libs/bootstrap.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.4.2.js"></script>
+        <script type="text/javascript" src="/js/jquery-highlight.js"></script>
     </body>
 </html>
