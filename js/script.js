@@ -30,8 +30,8 @@ $(".panelsearch").hide(1000);
 
 //This is the search box on the page!!!! 
 jQuery.fn.extend({
-    mark: function(search1, classCCSSsearch){
-        var regex = new RegExp("(<[^>]*>)|("+ search1.replace(/([-.*+?^${}()|[\]\/\\])/g,"\\$1") +')', 'ig');
+    mark: function(search0, classCCSSsearch){
+        var regex = new RegExp("(<[^>]*>)|("+ search0.replace(/([-.*+?^${}()|[\]\/\\])/g,"\\$1") +')', 'ig');
         var newHtml=this.html(this.html().replace(regex, function(a, b, c){
             return (a.charAt(0) == "<") ? a : "<span class=\""+ classCCSSsearch +"\">" + a + "</span>";
         }));
@@ -40,7 +40,22 @@ jQuery.fn.extend({
 });
 //To highlight text
 function highlightText(){
-    $('#ola').mark(textbox.value,"highlight");
+    $('.search1').mark(textbox.value,"highlight");
+    $('.search2').mark(textbox.value,"highlight");
+    $('.search3').mark(textbox.value,"highlight");
+    $('.search4').mark(textbox.value,"highlight");
+    $('.search5').mark(textbox.value,"highlight");
+    $('.search6').mark(textbox.value,"highlight");
+    $('.search7').mark(textbox.value,"highlight");
+    $('.search8').mark(textbox.value,"highlight");
+    $('.search9').mark(textbox.value,"highlight");
+    $('.search10').mark(textbox.value,"highlight");
+    $('.search11').mark(textbox.value,"highlight");
+    $('.search12').mark(textbox.value,"highlight");
+    $('.search13').mark(textbox.value,"highlight");
+    $('.search14').mark(textbox.value,"highlight");
+    $('.search15').mark(textbox.value,"highlight");
+    $('.search16').mark(textbox.value,"highlight");
 }
 //end tehe search box
 
