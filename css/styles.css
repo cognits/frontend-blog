@@ -1,0 +1,292 @@
+/*the title of blog */
+
+.header{
+    font-size: 20px;
+    color: #808080;
+    margin: 0.5%;
+    display: inline-block;
+}
+
+hr{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: block;
+}
+
+/*for the button home*/
+.home{
+    font-size: 15px;
+    margin: 0.5%;
+    float: right;
+    cursor:pointer;
+}
+a:link{
+    text-decoration: none
+}
+.texthome{
+    color: #808080;
+    text-decoration:none;
+}
+.titlegeneral{
+    background-color: #f6f6f6;
+    border-top: 1px solid #BDBDBD;
+}
+
+.cognits{
+    font-size: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.textCognits{
+    font-size: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+}/*End the botton Home*/
+
+/*This is the search box on the page*/
+.buttonsearch{
+    display: inline-block;
+    height:20px;
+    width: 20px;
+    background-color:#ffffff;
+    color:#808080;
+    border-radius: 3%;
+    margin-top:2px;
+}
+
+.list {
+    float: right;
+    font-family:Arial;
+    color: #808080;
+}
+
+.panelsearch {
+    margin-right: 2%;
+    font-size: 15px;
+    color:#9a9a9a;
+    height:25px;
+    display:none;
+    font-family:arial,serif;
+    float: right;
+}
+
+.pull-me {
+    position:relative;
+    margin: 0.5%;
+    margin-right: 2%;
+    width:50px;
+    height:20px;
+    font-family:arial,sans-serif;
+    font-size:15px;
+    color: #808080;
+    cursor:pointer;
+    float: right;
+}
+
+.box{
+    -webkit-box-shadow: 0 0 5px #a7a7a7;
+    -moz-box-shadow: 0 0 5px #a7a7a7;
+    box-shadow: 0 0 5px #a7a7a7;
+    margin-top: 2%
+}
+
+.highlight{
+    color: #f3aa04;
+    background-color: #ffff96;
+
+}
+
+.hide_search{
+    display: inline-block;
+    border: 2px solid #f1f1f1;
+    cursor: pointer; 
+}/*End the search box*/
+
+
+/*The POSTS*/
+.marginpost{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/*The fist post*/
+.title{
+    font-size: 35px;
+    color:#1d80e2;
+    font-weight: bold;
+}
+
+.post1 {
+    font-size: 125%;
+    color:#9a9a9a;
+    display:none;
+    font-family:arial,serif;
+}
+
+.pull1 {
+    display:inline-block;
+    margin: 0.5%;
+    font-family:arial,sans-serif;
+    font-size:20px;
+    color:#1d80e2;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.date{
+    text-decoration: none;
+    font-size: 17px;
+}/*end the first post*/
+
+/*The second post*/
+.title1{
+    font-size: 35px;
+    color:#1d80e2;
+    font-weight: bold;
+}
+
+.post2 {
+    font-size: 15px;
+    color:#9a9a9a;
+    display:none;
+    font-family:arial,serif;
+}
+
+.pull2 {
+    display:inline-block;
+    margin: 0.5%;
+    font-family:arial,sans-serif;
+    font-size:20px;
+    color:#1d80e2;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.date1{
+    text-decoration: none;
+    font-size: 17px;
+}/*end the second post*/
+
+
+/*The third post*/
+.title2{
+    font-size: 35px;
+    color:#1d80e2;
+    font-weight: bold;
+}
+
+.post3 {
+    font-size: 15px;
+    color:#9a9a9a;
+    display:none;
+    font-family:arial,serif;
+}
+
+.pull3 {
+    display:inline-block;
+    margin: 0.5%;
+    font-family:arial,sans-serif;
+    font-size:20px;
+    color:#1d80e2;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.date2{
+    text-decoration: none;
+    font-size: 17px;
+}/*end the third post*/
+
+/*the fourth post*/
+.title3{
+    font-size: 35px;
+    color:#1d80e2;
+    font-weight: bold;
+}
+
+.post4{
+    font-size: 15px;
+    color:#9a9a9a;
+    display:none;
+    font-family:arial,serif;
+}
+
+.pull4{
+    display:inline-block;
+    margin: 0.5%;
+    font-family:arial,sans-serif;
+    font-size:20px;
+    color:#1d80e2;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.date3{
+    text-decoration: none;
+    font-size: 17px;
+}/*end the fifth post*/
+
+.oculto{
+    display: none;
+}/*The posts hide*/
+
+.bottons{
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 20px;
+    color:#1d80e2;
+    border-radius: 15px;
+    border: 2px solid #f1f1f1;
+    float: right;
+    cursor:pointer;
+}/*The format botton other post and back*/
+
+.hover_button{
+    color:#1a73cb;
+    border: 2px solid #bbbbbb;
+    -webkit-box-shadow: 0 0 15px #a7a7a7;
+    -moz-box-shadow: 0 0 15px #a7a7a7;
+    box-shadow: 0 0 15px #a7a7a7;
+}/*The format hover botton other post and back*/
+
+.copyright{
+    margin-left: 15%;
+    margin-right: 15%;
+    display:inline-block;
+}/*footer*/
+
+.imagezise{
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 10px;
+}/*The images*/
+
+/*The coments of post*/
+.coment{
+float: right;
+}
+
+.inputcoment{
+    color: black;
+}
+
+.botadd{
+    height:20px;
+    width:70px;
+    background-color:#0046b4;
+    font-family:arial;
+    font-weight:bold;
+    border-radius: 3px;
+    text-align:center;
+    margin-top:2px;
+    cursor:pointer;
+}/*to add comments*/
+
+
+.coments{
+    float: left;
+    font-family:garamond;
+    color:#0046b4;
+    font-size: 17px;
+}
