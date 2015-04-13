@@ -1,0 +1,164 @@
+body{
+	/*background: url("/home/cognitstarde/Escritorio/frontend-blog/images/fondo.jpg");*/
+	cursor: url("http://u.jimdo.com/www21/o/s4e9df44a0ad8ccd8/img/i0ebb25453c3942ad/1391502327/thumb/image.png"),default;
+}
+
+/***** All paragraphs ******/
+p{
+	margin-top: 12px;
+}
+/******** Start Bar ********/
+
+/*Cognits Blog*/
+.cblog{
+	margin-left: 15px;
+	color: #585858;
+}
+
+/*Home*/
+.home{
+	margin-top: -30px;
+	margin-left: 1140px;
+	color: #585858;
+}
+
+/*Search*/
+.search{
+	margin-top: -30px;
+	margin-left: 1220px;
+	color: #585858;
+}
+
+/*Searching Text */
+.searching{
+	margin-left: 1020px;
+}
+/*Resaltar Texto a buscar*/
+.resaltar{
+	background-color:#FF0;
+}
+
+
+/********** Title of the Blog ********/
+/*Div del Cognits Blog*/
+div{
+	margin-top: -19px;
+}
+.parte2{ /*Div of the Cognits Blog*/
+	width: 1301px;
+	height: 175px;
+	background-color: #F9F5F5;
+	font-size: 16px;
+}
+/* Blank*/
+.blank{
+	font-size: 10px;
+	color: #F9F5F5 ;
+}
+/*Cognits Blog*/
+.nota1{
+	margin-left: 300px;
+	font-size: 38px;
+}
+/*Text*/
+.nota2{
+	font-size: 18px;
+	margin-left: 300px;
+}
+/****** Menu ******/
+.menu{
+	margin-top: 50px;
+	width: 1020px;
+}
+/******* Posts Divs *******/
+.post1{
+	/*color: #0080FF;*/
+	margin-top: -90px;
+	margin-left: 300px;
+}
+.post2{
+	/*color: #0080FF;*/
+	margin-top: -90px;
+	margin-left: 300px;
+}
+.post3{
+	/*color: #0080FF;*/
+	margin-top: -90px;
+	margin-left: 300px;
+}
+
+/****** Posts  Titles */
+.generalTitle{
+	font-size: 30px;
+	color: #2E9AFE;
+	margin-left: 300px;
+}
+/******** Posts Contents *****/
+.generalContent{
+	text-align: justify;
+	font-size: 20px;
+	color: #2E9AFE;
+}
+/********* Post by , Date and cognits student *******/
+.date{
+	color: black;
+}
+.generalDate{
+	color: black;
+	margin-left: 186px;
+	margin-top: -30px;
+}
+.blue{
+	margin-left: 75px;
+	margin-top: -30px;
+	color: #2E9AFE;
+}
+
+/*Dividing line of the posts */
+.divs{
+	margin-left: 300px; 
+	width: 700px;
+	height: 1px;
+}
+
+/*Button1 Older Post --> */
+.boton1{
+	margin-top: 10px;
+	margin-left: 880px;
+	/*border: 2px solid #F2F2F2;*/
+	height: 30px;
+	width: 120px;
+	border-radius: 20px;
+	color: #0080FF;
+}
+.but{
+	margin-top: -10px;
+	margin-left: 15px;
+}
+
+/****** Comentary TextBox *********/
+form {
+    font-size: 12px;
+    font-family: Verdana, Arial, Sans-Serif;
+    display: inline-block;
+}
+/******* Comentaries, Dates, Separators *******/
+.com{
+	font-size: 15px;
+}
+.day{
+	color: #0080FF;
+	font-family: Arial;
+	font-size: 15px;
+}
+.coment_separator{
+	color: black;
+}
+
+/********** Credits ********/
+.separators{
+	margin-top: 20px;
+}
+.creditos{
+	margin-left: 300px;
+}
