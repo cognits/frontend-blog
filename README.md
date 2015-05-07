@@ -1,81 +1,67 @@
-# Tu Blog
+# Your Blog
 
-Para este proyecto, vas a desarrollar un blog. Es importante que te enfoques
-en desarrollar el Blog cómo se pide en la imagen. Si quieres seguirle agregando
-funcionalidades y cambios visuales, hazlo en una nueva `branch`. En el `branch master`
-debe estar igual a las especificaciones aquí para que al final, cuando subas tu
-proyecto sea calificado de forma automática.
+For this project, you must develop your own blog. It is important that you focus on developing the Blog as asked on the image. If you want to add more functionalities and visual changes, do it on a new `branch`. On the `master branch`
+the project must be the same as the specifications asked here, so that your project gets evaluated automatically. 
 
-1. Fork y clonar repositorio
-2. Abrir el diseño y analizar
-3. Escribir código
-4. Entrega
+1. Fork and clone the repository
+2. Open the design and analyse it
+3. Write the code
+4. Handing the project
 
 
-## 1. Fork y clonar repositorio
+## 1. Fork and clone the repository
 
-Hacer **Fork** de este repositorio para tu usuario. Luego debes clonar tu repositorio localmente. En el terminal debes ingresar algo como:
+**Fork** the repository for your user. You have to locally clone the repository. On the terminal you must write the following code:
 
 ```
 git clone https://github.com/cognits/frontend-blog.git
 ```
-Cambiando *cognits* por tu usuario.
+Change *cognits* for your user name.
 
-## 2. Abrir el diseño y analizar
+## 2. Open the design and analyse it
 
-Una imagen o Photoshop de un diseñador va a ser tu única guía cuando te
-encuentres en un equipo de desarrollo. Esa imagen te dará las guías sobre las cuales
-esperan el software. Eso buscamos hacer aquí! Abre la imagen [blog-sketch](blog-sketch.png)
-para ver cómo te debe quedar tu página.
+An image or a photoshop file from a designer is going to be your only guide when you work with a development team. This image is going to give you the guidelines you need to follow for the software. Open the image [blog-sketch](blog-sketch.png)
+to see how your webpage is going to look like.
 
 
-## 3. Escribir código
+## 3. Write the code
 
-Asegura escribir todo tu código de HTML en [index.html](index.html) y todo tu CSS en [styles.css](css/styles.css). Lo que buscas es reproducir en código la imagen [blog-sketch](blog-sketch.png) lo más similar posible.
+Make sure you write all of your HTML code at [index.html](index.html) and all of you CSS code at  [styles.css](css/styles.css). Through code, you have to make the closest webpage possible to the blog-sketch image [blog-sketch](blog-sketch.png). 
 
-### Escribe 3 posts
-Ahora debes escribir al menos 3 posts. Cada post individual debe quedar adentro del archivo
-"posts.json", adentro del folder *_posts*. Para cada posts agrega titulo, fecha, contenido y autor. Estos los tienes que leer via Javascript/JQuery y mostrarlos
-adentro del blog en orden de más reciente a más antiguo.
+### Write 3 posts
+Now you have to write at least 3 posts. Each individual post must be inside the “post.json” file, inside the *_posts*. Para cada posts agrega titulo, fecha, contenido y autor. Add a title for each post, the content and the author for each post. You have to read it through Javascritp/JQuery and show them in the blog from the newest to the oldest.
 
 ### Comments
-Luego de tener el blog funcionando, debemos dejar a tus lectores comentar! Agrega
-un area hasta abajo de cada post donde un visitante puede comentar y aparezca en la
-pantalla.
+After you make sure your blog is functional, you have to let your users be able to comment! Add an area at the bottom of each blog where the users can comment, and it should be shown on the screen.
 
-### Avanzado
-Sólo hasta después de completar la página principal del blog, puedes continuar a los
-temas avanzados. Ahora crea un buscador usando Javascript y JQuery que
-busque los posts por el *query* y regrese el qué contiene esas palabras.
+### Advanced
+Only when you finish the main page of the blog, you can continue with the advanced topics. Now make a search option using Javascript and JQuery that looks for the posts by the *query* and that returns the posts that contains the used words.
 
-### Corriendo los tests localmente
+### Running the tests locally 
 
-Para asegurar que tu código pase, debes correr los tests en tu computadora. Para eso,
-vamos a usar la herramienta llamada [Gulp](http://www.gulpjs.com) que corre en [Node.JS](http://www.nodejs.org).
+To make sure your code passes, you have to run tests on your computer. For this we are going to use a tool known as  [Gulp](http://www.gulpjs.com) that runs on [Node.JS](http://www.nodejs.org).
 
-Si seguiste todos los pasos detallados en [Pre-requisitos](1. Pre-requisitos), usando
-terminal, entra al folder del proyecto. Allí escribe los siguientes comandos:
+If you followed all the detailed steps in the [Pre-requisitos](1. Pre-requisitos), using the terminal go into the project folder and write the following commands:
 
 ```
 npm -d install
 ```
-Luego que se instalan los módulos, corre:
+After installing the modules run this command: 
 ```
 gulp
 ```
 
-## 4. Entrega
+## 4. Handing the project
 
-Para entregar el proyecto, debemos hacer commit de los cambios y luego empujarlos
-a tu repositorio remoto en Github.
+To hand this project you must commit the changes and then push the project to your remote repository in Github.
 
-### Commit y Push
+### Commit and Push 
 
 ```
 git add .
-git commit -m 'Ya funciona el search del blog'
+git commit -m 'The search option of the blog is working!'
 ```
-Luego debemos enviar el código a tu repositorio en Github.
+Then we have to send the code to your Github repository
 
 ```
 git push origin master
@@ -83,11 +69,9 @@ git push origin master
 
 ### Pull Requests
 
-Luego de tener tus cambios en Github, debes hacer click en el link **Pull Requests**
-que se encuentra en la página de Github de tu proyecto. Luego sigue las
-instrucciones que dan allí.
+After making the changes in Github, you have to click on the **Pull Requests**
+link that can be found on the Github page of your project. Follow the instructions that they give you there.
 
-## 6. Retroalimentación
+## 6. Retroalimentation 
 
-Ahora toca ver el código de tus compañeros y dejar tus comentarios. Entra al
-proyecto de un compañero y haz 3 sugerencias de su código usando **Issues**.
+Now you have to look at your buddies code and leave your comments. Get on one of your buddies project and make 3 suggestions to they code using **Issues**.
