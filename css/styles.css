@@ -1,0 +1,186 @@
+a:link {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #FF0;
+}
+
+.search_container {
+    margin-top: 3px;
+    max-width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+}
+
+.to_search {
+    max-height: 36px;
+    max-width: 50%;
+    margin-right: 4px;
+
+}
+
+.search_button {
+    background-color: white;
+    border: 0;
+    height: 2%;
+}
+
+.home_link {
+    margin-right: 2%;
+    color: #656565;
+}
+
+.up {
+    display: flex;
+    align-items: center;
+}
+
+.text_right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.upper_text {
+    color: #656565;
+}
+
+.proyect_description {
+    font-size: 155%;
+}
+
+.proyect_purpose {
+    background-color: #F5F5F5;
+    border-top: 1px solid #C7C7C7;
+}
+
+.one_two_posts {
+    margin-top: 5%;
+    text-align: justify;
+}
+
+.three_four_posts {
+    margin-top: 5%;
+    text-align: justify;
+}
+
+.coloured {
+    color: #428BCA;
+}
+
+.upper_post {
+    margin-bottom: 2%;
+}
+
+
+.display_content {
+    border: 0;
+    text-align: left;
+    margin-left: -3%;
+    margin-top: 3%;
+    font-weight: bold;
+    color: #428bca;
+    cursor: pointer;
+}
+
+
+.info {
+    margin-left: -2.2%;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #E6E6E6;
+    font-weight: bold;
+}
+
+.info2 {
+    margin-left: -2.2%;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #E6E6E6;
+    font-weight: bold;
+}
+
+.info3 {
+    margin-left: -2.2%;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #E6E6E6;
+    font-weight: bold;
+}
+
+.info4 {
+    margin-left: -2.2%;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #E6E6E6;
+    font-weight: bold;
+}
+
+.view_more_post {
+    max-width: 132px;
+    border-radius: 54px;
+    background-color: white;
+    border: 1px solid #D1D1D1;
+    font-weight: bold;
+    color: #428BCA;
+}
+
+.older {
+    float: right;
+}
+
+.newest {
+    float: left;
+}
+
+.button_container {
+    margin-top: 2%;
+}
+
+.active_button {
+    background-color: #4BB5E2;
+    border: 1px solid white;
+    color: white;
+}
+
+.button_text {
+    margin: 0 0 0 0;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+}
+
+textarea {
+    min-height: 75px;
+    max-height: 75px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+footer {
+    padding-top: 1%;
+    margin-top: 4%;
+    border-top: 1px solid #E6E6E6;
+    font-weight: bold;
+    color: #656565;
+}
+
+.comments_user {
+    border: 1px solid #E6E6E6;
+    min-width: 95%;
+    min-height: 50px;
+    margin: auto;
+    margin-bottom: 4%;
+    padding: 2%;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.title_comment {
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
